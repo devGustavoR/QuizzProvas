@@ -10,237 +10,214 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
   {
-    "question": "Segundo Karl Marx, qual é a força motriz por trás das mudanças sociais na história?",
+    "question": "¿Cuál es el pronombre personal sujeto adecuado para completar la siguiente frase: ___ gusta nadar todas las mañanas.",
     "answers": [
       {
-        "answer": "A ação de indivíduos heroicos.",
+        "answer": "Yo",
         "correct": false
       },
       {
-        "answer": "O desenvolvimento das ideias e da cultura.",
+        "answer": "Tú",
         "correct": false
       },
       {
-        "answer": "As leis do mercado e da livre concorrência.",
+        "answer": "Él",
         "correct": false
       },
       {
-        "answer": "As contradições e conflitos entre classes sociais.",
+        "answer": "Nosotros",
         "correct": true
       }
     ]
   },
   {
-    "question": "Qual é o conceito central da análise marxista do capitalismo?",
+    "question": "¿En cuál alternativa el pronombre personal sujeto está conjugado correctamente para completar la siguiente frase: ___ fui al cine con mis amigos ayer.",
     "answers": [
       {
-        "answer": "A livre iniciativa e a propriedade privada.",
+        "answer": "Nosotros",
         "correct": false
       },
       {
-        "answer": "A busca pelo lucro e pela acumulação de capital.",
-        "correct": true
-      },
-      {
-        "answer": "A harmonia entre os interesses do capital e do trabalho.",
+        "answer": "Ellos",
         "correct": false
       },
       {
-        "answer": "A exploração da classe trabalhadora pela classe capitalista.",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "question": "De acordo com Marx, como a alienação do trabalho afeta os trabalhadores sob o capitalismo?",
-    "answers": [
-      {
-        "answer": "Ela os torna mais livres e autônomos.",
+        "answer": "Tú",
         "correct": false
       },
       {
-        "answer": "Ela os motiva a trabalhar mais arduamente.",
-        "correct": false
-      },
-      {
-        "answer": "Ela os transforma em meros apêndices das máquinas.",
-        "correct": true
-      },
-      {
-        "answer": "Ela os impede de se realizarem como seres humanos.",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "question": "Qual é o papel da luta de classes na visão de Marx sobre o futuro da sociedade?",
-    "answers": [
-      {
-        "answer": "Levar à conciliação entre as classes sociais.",
-        "correct": false
-      },
-      {
-        "answer": "Manter a ordem social existente.",
-        "correct": false
-      },
-      {
-        "answer": "Levar à superação do capitalismo e à construção de uma sociedade sem classes.",
-        "correct": true
-      },
-      {
-        "answer": "Fortalecer o poder do Estado sobre a economia.",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "question": "O que Marx propôs como alternativa ao capitalismo?",
-    "answers": [
-      {
-        "answer": "Uma volta à sociedade feudal.",
-        "correct": false
-      },
-      {
-        "answer": "Uma ditadura do proletariado.",
-        "correct": true
-      },
-      {
-        "answer": "Uma sociedade baseada na propriedade privada dos meios de produção.",
-        "correct": false
-      },
-      {
-        "answer": "Uma sociedade comunista, baseada na propriedade social dos meios de produção e na livre associação dos trabalhadores.",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "question": "A relação entre o indivíduo e a sociedade é frequentemente debatida por sociólogos e filósofos. De acordo com a perspectiva sociológica, como a sociedade influencia os indivíduos?",
-    "answers": [
-      {
-        "answer": "Através da genética e da biologia dos indivíduos.",
-        "correct": false
-      },
-      {
-        "answer": "Através de suas crenças e valores pessoais únicos.",
-        "correct": false
-      },
-      {
-        "answer": "Através da imposição direta de normas e regras sociais.",
-        "correct": false
-      },
-      {
-        "answer": "Através de um processo de socialização, no qual os indivíduos internalizam normas, valores e expectativas sociais.",
+        "answer": "Él",
         "correct": true
       }
     ]
   },
   {
-    "question": "Em contrapartida, como os indivíduos podem influenciar a sociedade?",
+    "question": "¿Cuál es la forma de tratamiento adecuada para dirigirse a una persona mayor o en una posición de autoridad en España?",
     "answers": [
       {
-        "answer": "Através de ações individuais que desafiam as normas sociais.",
+        "answer": "Tú",
+        "correct": false
+      },
+      {
+        "answer": "Vosotros",
+        "correct": false
+      },
+      {
+        "answer": "Usted",
         "correct": true
       },
       {
-        "answer": "Através da criação de novas leis e políticas públicas.",
-        "correct": false
-      },
-      {
-        "answer": "Através da revolução social e da mudança do sistema político.",
-        "correct": false
-      },
-      {
-        "answer": "Através de todas as alternativas acima.",
+        "answer": "Vos",
         "correct": false
       }
     ]
   },
   {
-    "question": "Alguns teóricos argumentam que a sociedade é mais importante do que o indivíduo, enquanto outros defendem a primazia do indivíduo. Qual das alternativas a seguir melhor representa a visão da Sociologia sobre essa dicotomia?",
+    "question": "¿En qué contexto sería más apropiada la forma de tratamiento Señor(a)?",
     "answers": [
       {
-        "answer": "A Sociologia sempre prioriza a análise do indivíduo em suas ações e decisões.",
+        "answer": "Hablando con un amigo cercano",
         "correct": false
       },
       {
-        "answer": "A Sociologia ignora o papel do indivíduo e foca apenas nas estruturas sociais.",
-        "correct": false
-      },
-      {
-        "answer": "A Sociologia reconhece a importância tanto do indivíduo quanto da sociedade, buscando entender como eles se inter-relacionam.",
+        "answer": "Dirigiéndose a un profesor en la escuela",
         "correct": true
       },
       {
-        "answer": "A Sociologia defende que a sociedade é a única realidade, e os indivíduos são apenas produtos dela.",
+        "answer": "Hablando con un niño",
+        "correct": false
+      },
+      {
+        "answer": "Interactuando con un colega de trabajo",
+        "correct": false
+      }
+    ]
+  },{
+    "question": "¿Cuál es la conjugación correcta del verbo hablar en la primera persona del singular (yo) en presente de indicativo?",
+    "answers": [
+      {
+        "answer": "Hablo",
+        "correct": true
+      },
+      {
+        "answer": "Hablas",
+        "correct": false
+      },
+      {
+        "answer": "Hablamos",
+        "correct": false
+      },
+      {
+        "answer": "Hablan",
         "correct": false
       }
     ]
   },
   {
-    "question": "A Sociologia surgiu na Europa em qual período histórico que foi marcado por intensas transformações políticas, econômicas e sociais?",
+    "question": "¿Cuál es la conjugación correcta del verbo tener en la tercera persona del singular (él/ella/usted) en presente de indicativo?",
     "answers": [
       {
-        "answer": "Renascimento",
-        "correct": false
-      },
-      {
-        "answer": "Idade Média",
-        "correct": false
-      },
-      {
-        "answer": "Antigo Regime",
-        "correct": false
-      },
-      {
-        "answer": "Revolução Industrial e Iluminismo",
-        "correct": true
-      }
-    ]
-  },
-  {
-    "question": "Além da Revolução Francesa, qual outro evento histórico contribuiu fortemente para o questionamento da ordem social tradicional e o surgimento da Sociologia?",
-    "answers": [
-      {
-        "answer": "Guerras Napoleônicas",
-        "correct": false
-      },
-      {
-        "answer": "Reforma Protestante",
-        "correct": false
-      },
-      {
-        "answer": "Revolução Industrial",
+        "answer": "Tiene",
         "correct": true
       },
       {
-        "answer": "Absolutismo Monárquico",
+        "answer": "Tengo",
+        "correct": false
+      },
+      {
+        "answer": "Tienen",
+        "correct": false
+      },
+      {
+        "answer": "Tienes",
         "correct": false
       }
     ]
   },
   {
-    "question": "A visão de mundo iluminista, baseada na razão e no progresso, influenciou o desenvolvimento inicial da Sociologia. Qual dos seguintes objetivos NÃO estava entre os anseios dos primeiros sociólogos?",
+    "question": "¿Cuál es la forma correcta del imperativo afirmativo del verbo comer en la segunda persona del singular (tú)?",
     "answers": [
       {
-        "answer": "Compreender as leis que governam a sociedade.",
+        "answer": "Comes",
         "correct": false
       },
       {
-        "answer": "Analisar mitos e lendas para explicar a organização social.",
+        "answer": "Comiste",
+        "correct": false
+      },
+      {
+        "answer": "Come",
         "correct": true
       },
       {
-        "answer": "Procurar soluções para os problemas sociais da época.",
-        "correct": false
-      },
-      {
-        "answer": "Desenvolver métodos científicos para estudar a sociedade.",
+        "answer": "Comas",
         "correct": false
       }
     ]
   },
-  
+  {
+    "question": "¿Cómo se forma el imperativo afirmativo del verbo escribir en la segunda persona del plural (vosotros)?",
+    "answers": [
+      {
+        "answer": "Escriben",
+        "correct": false
+      },
+      {
+        "answer": "Escribís",
+        "correct": false
+      },
+      {
+        "answer": "Escribís",
+        "correct": false
+      },
+      {
+        "answer": "Escribid",
+        "correct": true
+      }
+    ]
+  },
+  {
+  "question": "¿Cuál es el artículo definido adecuado para completar la frase: Voy a ___ supermercado?",
+  "answers": [
+    {
+      "answer": "La",
+      "correct": false
+    },
+    {
+      "answer": "El",
+      "correct": true
+    },
+    {
+      "answer": "Un",
+      "correct": false
+    },
+    {
+      "answer": "Una",
+      "correct": false
+    }
+  ]
+},
+{
+  "question": "¿Cuál es el artículo indefinido adecuado para completar la frase: Necesito ___ lápiz para escribir?",
+  "answers": [
+    {
+      "answer": "El",
+      "correct": false
+    },
+    {
+      "answer": "La",
+      "correct": false
+    },
+    {
+      "answer": "Un",
+      "correct": true
+    },
+    {
+      "answer": "Una",
+      "correct": false
+    }
+  ]
+}
 ];
 
 // substituição do quizz para a primeira pergunta

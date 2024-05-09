@@ -10,274 +10,211 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
   {
-    "question": "No modelo atômico atual, qual é a parte central do átomo que concentra a maior parte da massa e da carga positiva?",
+    "question": "Em que direção o Sol se põe em relação ao ponto cardeal oeste?",
     "answers": [
       {
-        "answer": "Eletrosfera",
+        "answer": "Norte",
         "correct": false
       },
       {
-        "answer": "Núcleo",
-        "correct": true
-      },
-      {
-        "answer": "Orbitais",
+        "answer": "Sul",
         "correct": false
       },
       {
-        "answer": "Níveis de energia",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "question": "Quais são as partículas subatômicas que compõem o núcleo atômico?",
-    "answers": [
-      {
-        "answer": "Prótons e elétrons",
+        "answer": "Leste",
         "correct": false
       },
       {
-        "answer": "Prótons e nêutrons",
-        "correct": true
-      },
-      {
-        "answer": "Nêutrons e elétrons",
-        "correct": false
-      },
-      {
-        "answer": "Prótons, nêutrons e elétrons",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "question": "Qual é a carga elétrica dos prótons, nêutrons e elétrons?",
-    "answers": [
-      {
-        "answer": "Prótons (+), nêutrons (+), elétrons (-)",
-        "correct": false
-      },
-      {
-        "answer": "Prótons (+), nêutrons (0), elétrons (-)",
-        "correct": false
-      },
-      {
-        "answer": "Prótons (+), nêutrons (-), elétrons (+)",
-        "correct": false
-      },
-      {
-        "answer": "Prótons (0), nêutrons (+), elétrons (-)",
+        "answer": "Oeste",
         "correct": true
       }
     ]
   },
   {
-    "question": "O que é o número atômico de um elemento químico?",
+    "question": "Se você estiver de frente para o nascer do sol, em que direção estará olhando?",
     "answers": [
       {
-        "answer": "O número total de prótons e nêutrons no núcleo do átomo.",
+        "answer": "Oeste",
         "correct": false
       },
       {
-        "answer": "O número de elétrons na eletrosfera do átomo.",
-        "correct": false
-      },
-      {
-        "answer": "A massa atômica do elemento.",
-        "correct": false
-      },
-      {
-        "answer": "O número de prótons no núcleo do átomo.",
-        "correct": true
-      }
-    ]
-  },
-  {
-    "question": "O que é o número de massa de um átomo?",
-    "answers": [
-      {
-        "answer": "O número total de prótons e nêutrons no núcleo do átomo.",
+        "answer": "Leste",
         "correct": true
       },
       {
-        "answer": "O número de elétrons na eletrosfera do átomo.",
+        "answer": "Norte",
         "correct": false
       },
       {
-        "answer": "A massa atômica do elemento.",
-        "correct": false
-      },
-      {
-        "answer": "O número de nêutrons no núcleo do átomo.",
+        "answer": "Sul",
         "correct": false
       }
     ]
   },
   {
-    "question": "De acordo com o Princípio de Aufbau, em qual ordem os elétrons preenchem os subníveis de um átomo?",
+    "question": "Qual é a latitude do Polo Norte?",
     "answers": [
       {
-        "answer": "Em ordem crescente de energia, preenchendo um subnível antes de passar para o próximo.",
+        "answer": "0°",
+        "correct": false
+      },
+      {
+        "answer": "23,5° N",
+        "correct": false
+      },
+      {
+        "answer": "66,5° N",
+        "correct": false
+      },
+      {
+        "answer": "90° N",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "O que é o meridiano de Greenwich?",
+    "answers": [
+      {
+        "answer": "Um paralelo que corta a América do Sul.",
+        "correct": false
+      },
+      {
+        "answer": "Uma linha que marca a longitude 0°.",
         "correct": true
       },
       {
-        "answer": "Em ordem decrescente de energia, preenchendo o subnível mais energético primeiro.",
+        "answer": "Um círculo máximo que passa pelos polos da Terra.",
         "correct": false
       },
       {
-        "answer": "Aleatoriamente, sem seguir uma ordem específica.",
-        "correct": false
-      },
-      {
-        "answer": "Preenchendo os subníveis com o mesmo número de elétrons antes de passar para o próximo.",
+        "answer": "Um paralelo que divide a Terra em hemisfério norte e hemisfério sul.",
         "correct": false
       }
     ]
   },
   {
-    "question": "Qual o número máximo de elétrons que um subnível s pode acomodar?",
+    "question": "Qual é a diferença de tempo entre dois fusos horários consecutivos?",
     "answers": [
       {
-        "answer": "2",
+        "answer": "30 minutos",
+        "correct": false
+      },
+      {
+        "answer": "1 hora",
         "correct": true
       },
       {
-        "answer": "8",
+        "answer": "2 horas",
         "correct": false
       },
       {
-        "answer": "18",
-        "correct": false
-      },
-      {
-        "answer": "32",
+        "answer": "3 horas",
         "correct": false
       }
     ]
   },
   {
-    "question": "Qual o número máximo de elétrons que uma camada (nível principal) pode acomodar?",
+    "question": "Se uma cidade está localizada no fuso horário UTC-5 e outra cidade está no fuso horário UTC+3, quantas horas de diferença existem entre elas?",
     "answers": [
       {
-        "answer": "2n², onde n é o número da camada.",
+        "answer": "8 horas",
         "correct": true
       },
       {
-        "answer": "8n, onde n é o número da camada.",
+        "answer": "10 horas",
         "correct": false
       },
       {
-        "answer": "18n, onde n é o número da camada.",
+        "answer": "12 horas",
         "correct": false
       },
       {
-        "answer": "32n, onde n é o número da camada.",
+        "answer": "16 horas",
         "correct": false
       }
     ]
   },
   {
-    "question": "O que é o diagrama de Linus Pauling e qual a sua utilidade na representação da distribuição eletrônica?",
+    "question": "Se uma escala cartográfica é 1:100.000, o que isso significa?",
     "answers": [
       {
-        "answer": "Uma tabela que organiza os elementos químicos por ordem crescente de número atômico.",
+        "answer": "Cada unidade no mapa representa 100.000 unidades na realidade.",
         "correct": false
       },
       {
-        "answer": "Um gráfico que mostra a variação da energia potencial dos elétrons em diferentes níveis de energia.",
+        "answer": "Cada unidade na realidade representa 100.000 unidades no mapa.",
         "correct": false
       },
       {
-        "answer": "Uma representação visual da distribuição dos elétrons nos subníveis e camadas de um átomo, utilizando setas e números.",
+        "answer": "O mapa tem 100.000 vezes o tamanho da área real.",
+        "correct": false
+      },
+      {
+        "answer": "O mapa tem 1/100.000 do tamanho da área real.",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Qual é a função principal da escala cartográfica em um mapa?",
+    "answers": [
+      {
+        "answer": "Indicar a direção dos pontos cardeais.",
+        "correct": false
+      },
+      {
+        "answer": "Mostrar a altitude das montanhas e vales.",
+        "correct": false
+      },
+      {
+        "answer": "Representar a proporção entre as dimensões reais da Terra e as dimensões da representação no mapa.",
         "correct": true
       },
       {
-        "answer": "Uma fórmula matemática que calcula o número de elétrons em cada camada de um átomo.",
+        "answer": "Indicar a densidade populacional de uma região.",
         "correct": false
       }
     ]
   },
   {
-    "question": "Qual a importância da Tabela Periódica para a organização dos elementos químicos?",
+    "question": "Qual é a forma aproximada da Terra?",
     "answers": [
       {
-        "answer": "Classifica os elementos por ordem alfabética, facilitando a busca por um elemento específico.",
+        "answer": "Cilíndrica",
         "correct": false
       },
       {
-        "answer": "Agrupa os elementos com base em suas propriedades físicas, como ponto de fusão e ponto de ebulição.",
-        "correct": false
-      },
-      {
-        "answer": "Organiza os elementos de acordo com seu número atômico, revelando relações entre suas propriedades e estrutura atômica.",
+        "answer": "Esférica",
         "correct": true
       },
       {
-        "answer": "Fornece informações sobre a massa atômica de cada elemento, permitindo cálculos químicos precisos.",
+        "answer": "Cúbica",
+        "correct": false
+      },
+      {
+        "answer": "Oval",
         "correct": false
       }
     ]
   },
   {
-    "question": "O que são grupos e períodos na Tabela Periódica?",
+    "question": "O que é uma órbita?",
     "answers": [
       {
-        "answer": "Grupos: Colunas verticais que reúnem elementos com propriedades químicas semelhantes devido à mesma configuração eletrônica na camada de valência. Períodos: Linhas horizontais que agrupam elementos com o mesmo número de camadas eletrônicas.",
+        "answer": "O tempo que a Terra leva para completar uma rotação em torno de si mesma.",
         "correct": false
       },
       {
-        "answer": "Grupos: Linhas horizontais que agrupam elementos com o mesmo número de camadas eletrônicas. Períodos: Colunas verticais que reúnem elementos com propriedades químicas semelhantes devido à mesma configuração eletrônica na camada de valência.",
+        "answer": "O movimento da Terra em torno do Sol.",
+        "correct": false
+      },
+      {
+        "answer": "A trajetória que um satélite ou planeta percorre ao redor de outro corpo celeste.",
         "correct": true
       },
       {
-        "answer": "Grupos: Conjuntos de elementos com o mesmo número de prótons no núcleo. Períodos: Conjuntos de elementos com o mesmo número de nêutrons no núcleo.",
-        "correct": false
-      },
-      {
-        "answer": "Grupos: Famílias de elementos com propriedades físicas semelhantes. Períodos: Séries de elementos com propriedades químicas semelhantes.",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "question": "Quais são os metais, ametais e semimetais na Tabela Periódica?",
-    "answers": [
-      {
-        "answer": "Metais: Localizados à esquerda e no centro da tabela, geralmente são sólidos à temperatura ambiente, bons condutores de calor e eletricidade e apresentam maleabilidade e ductilidade. Ametais: Encontrados à direita da tabela, geralmente são não metálicos à temperatura ambiente, maus condutores de calor e eletricidade e podem ser frágeis ou quebradiços. Semimetais: Localizados na região diagonal entre metais e ametais, apresentam propriedades intermediárias entre os dois grupos, podendo ser bons ou maus condutores de eletricidade e calor, dependendo do elemento específico.",
-        "correct": true
-      },
-      {
-        "answer": "Metais: Localizados à direita da tabela, geralmente são sólidos à temperatura ambiente, bons condutores de calor e eletricidade e apresentam maleabilidade e ductilidade. Ametais: Encontrados à esquerda e no centro da tabela, geralmente são não metálicos à temperatura ambiente, maus condutores de calor e eletricidade e podem ser frágeis ou quebradiços. Semimetais: Localizados na região diagonal entre metais e ametais, apresentam propriedades intermediárias entre os dois grupos, podendo ser bons ou maus condutores de eletricidade e calor, dependendo do elemento específico.",
-        "correct": false
-      },
-      {
-        "answer": "Metais: Localizados em todo o corpo da tabela, não apresentam um padrão definido de propriedades. Ametais: Encontrados em pequenas quantidades, dispersos pela tabela, sem características físicas ou químicas marcantes. Semimetais: Não existem na Tabela Periódica, são elementos artificiais criados em laboratório.",
-        "correct": false
-      },
-      {
-        "answer": "Metais: Encontrados apenas nos grupos 1 e 2 da tabela, são facilmente identificáveis por suas propriedades físicas características. Ametais: Localizados em todos os grupos da tabela, exceto nos grupos 1 e 2, apresentam grande diversidade de propriedades. Semimetais: Representam um grupo muito pequeno de elementos, com apenas seis elementos no total, situados na região entre metais e ametais.",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "question": "Qual a função dos números atômicos e números de massa na Tabela Periódica?",
-    "answers": [
-      {
-        "answer": "Número atômico: Indica a quantidade de prótons no núcleo do átomo e define a posição do elemento na tabela. Número de massa: Representa a soma do número de prótons e nêutrons no núcleo do átomo e fornece informações sobre a massa isotópica do elemento.",
-        "correct": true
-      },
-      {
-        "answer": "Número atômico: Informa a quantidade de elétrons na camada de valência do átomo e determina as propriedades químicas do elemento. Número de massa: Não possui função específica na Tabela Periódica.",
-        "correct": false
-      },
-      {
-        "answer": "Número atômico: É irrelevante para a organização da Tabela Periódica. Número de massa: Determina a posição do elemento na tabela e suas propriedades químicas.",
-        "correct": false
-      },
-      {
-        "answer": "Número atômico: Não possui relação com a Tabela Periódica. Número de massa: Indica o grupo e o",
+        "answer": "O período em que o Sol atinge sua maior altitude no céu.",
         "correct": false
       }
     ]
