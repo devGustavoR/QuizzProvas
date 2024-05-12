@@ -10,118 +10,144 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
   {
-    "question": "Qual é a principal teoria sobre o significado das pinturas rupestres?",
+    "question": "Qual dos grupos de substâncias NÃO é um tipo de lipídio?",
     "answers": [
-      { "answer": "Representações de rituais e crenças religiosas", "correct": true },
-      { "answer": "Mapas mostrando os locais de caça e pesca", "correct": false },
-      { "answer": "Registros de eventos históricos importantes", "correct": false },
-      { "answer": "Formas de comunicação entre diferentes grupos", "correct": false },
-      { "answer": "Todas as alternativas acima", "correct": false }
+      { "answer": "Carotenoides", "correct": false },
+      { "answer": "Oligossacarídeos", "correct": true },
+      { "answer": "Cerídeos", "correct": false },
+      { "answer": "Esteroides", "correct": false },
+      { "answer": "Fosfolipídios", "correct": false }
     ]
   },
   {
-    "question": "Qual é a principal interpretação sobre a função das estatuetas de Vênus?",
+    "question": "Os triglicerídeos são um tipo de lipídio composto por:",
     "answers": [
-      { "answer": "Símbolos de fertilidade e culto à maternidade", "correct": true },
-      { "answer": "Retratos de mulheres importantes da comunidade", "correct": false },
-      { "answer": "Representantes de deusas da mitologia pré-histórica", "correct": false },
-      { "answer": "Ornamentos decorativos para as casas das pessoas", "correct": false },
-      { "answer": "Todas as alternativas acima", "correct": false }
+      { "answer": "Uma molécula de glicerol e três ácidos graxos.", "correct": true },
+      { "answer": "Uma molécula de glicerol e dois ácidos graxos.", "correct": false },
+      { "answer": "Um ácido graxo e duas moléculas de glicerol.", "correct": false },
+      { "answer": "Três moléculas de glicerol e um ácido graxo.", "correct": false }
     ]
   },
   {
-    "question": "Qual era a principal função dos Zigurates?",
+    "question": "Qual dos itens a seguir NÃO é um tipo de lipídio?",
     "answers": [
-      { "answer": "Templo religioso dedicado aos deuses mesopotâmicos, onde os sacerdotes realizavam rituais e oferendas.", "correct": true },
-      { "answer": "Torre de observação astronômica para estudo dos astros e da criação de calendários.", "correct": false },
-      { "answer": "Residência dos reis e sacerdotes da Mesopotâmia, símbolo do poder político e religioso.", "correct": false },
-      { "answer": "Local de armazenamento de grãos e outros alimentos, garantindo a segurança da população.", "correct": false },
-      { "answer": "Todas as alternativas acima, pois os Zigurates tinham diversas funções interligadas.", "correct": false }
+      { "answer": "Ceras", "correct": false },
+      { "answer": "Carboidratos", "correct": true },
+      { "answer": "Fosfolipídios", "correct": false },
+      { "answer": "Óleos", "correct": false }
     ]
   },
   {
-    "question": "Qual era a principal função dos Selos Cilindricos?",
+    "question": "A principal função dos lipídios no corpo humano é:",
     "answers": [
-      { "answer": "Identificar a propriedade de objetos e documentos, evitando fraudes e garantindo a segurança das transações.", "correct": true },
-      { "answer": "Assinar contratos e outros documentos importantes, conferindo autenticidade e validade legal.", "correct": true },
-      { "answer": "Contar histórias e mitos da cultura mesopotâmica, transmitindo valores, crenças e conhecimentos.", "correct": false },
-      { "answer": "Amuletos para proteção contra o mal, utilizados como talismãs para afastar energias negativas.", "correct": false },
-      { "answer": "Todas as alternativas acima, pois os Selos Cilindricos tinham diversas funções interligadas.", "correct": true }
-    ]
-  },  
-  {
-    "question": "Qual era a principal função dos hieróglifos?",
-    "answers": [
-      { "answer": "Registrar informações do dia a dia, como transações comerciais, listas de impostos e eventos históricos.", "correct": true },
-      { "answer": "Escrever textos religiosos e sagrados, como os Livros dos Mortos e os hinos aos deuses.", "correct": true },
-      { "answer": "Transmitir histórias, poemas e obras literárias, como 'O Conto do Camponês Eloquente' e 'As Aventuras de Sinuhé'.", "correct": true },
-      { "answer": "Decorar monumentos e tumbas, como as paredes das pirâmides e os sarcófagos.", "correct": true },
-      { "answer": "Todas as alternativas acima, pois os hieróglifos tinham diversas funções interligadas.", "correct": true }
+      { "answer": "Fornecer energia imediata.", "correct": false },
+      { "answer": "Armazenar energia a longo prazo.", "correct": true },
+      { "answer": "Formar a membrana celular.", "correct": false },
+      { "answer": "Transportar oxigênio no sangue.", "correct": false }
     ]
   },
   {
-    "question": "Qual era o significado principal da Esfinge de Gizé?",
+    "question": "Qual das alternativas a seguir NÃO é uma função das proteínas no corpo humano?",
     "answers": [
-      { "answer": "Símbolo do poder e da força do faraó, representando sua autoridade sobre o reino.", "correct": true },
-      { "answer": "Guardiã das tumbas e dos locais sagrados, protegendo-os de maus espíritos e invasores.", "correct": true },
-      { "answer": "Representação da divindade Hator, deusa do amor, da beleza e da música.", "correct": false },
-      { "answer": "Monumento religioso que servia como local de culto e adoração aos deuses egípcios.", "correct": false },
-      { "answer": "Todas as alternativas acima, pois a Esfinge de Gizé tinha diversos significados interligados.", "correct": true }
+      { "answer": "Construção e reparo de tecidos.", "correct": false },
+      { "answer": "Transporte de oxigênio no sangue.", "correct": true },
+      { "answer": "Ação enzimática.", "correct": false },
+      { "answer": "Armazenamento de energia a longo prazo.", "correct": true }
     ]
   },
   {
-    "question": "Quais características principais definem a arquitetura clássica grega e romana, e qual o seu impacto na construção de monumentos, templos e cidades?",
+    "question": "As proteínas são compostas por moléculas menores chamadas:",
     "answers": [
-      { "answer": "Simetria, proporção, uso de colunas, frontões, frisos e entalhes, buscando a harmonia e a beleza idealizadas. Influenciou a construção de edifícios públicos, templos, teatros e outros monumentos em todo o mundo ocidental.", "correct": true },
-      { "answer": "Uso de materiais como pedra, mármore e madeira, com técnicas de construção avançadas, como arcos, abóbadas e cúpulas. Permitiu a construção de grandes estruturas, como o Panteão de Roma e o Partenon de Atenas.", "correct": true },
-      { "answer": "Integração com a natureza, valorização da luz natural e da proporção humana. Os edifícios clássicos eram projetados em harmonia com o ambiente ao redor, criando espaços grandiosos e convidativos.", "correct": true },
-      { "answer": "Influência de divindades e heróis mitológicos na decoração e na simbologia. Esculturas, pinturas e mosaicos retratavam histórias e mitos da cultura grega e romana, reforçando a religiosidade e os valores da época.", "correct": true },
-      { "answer": "Todas as alternativas acima, pois a arquitetura clássica grega e romana se caracterizava por seus princípios estéticos, técnicas avançadas e simbolismo rico", "correct": true }
+      { "answer": "Ácidos nucleicos", "correct": false },
+      { "answer": "Aminoácidos", "correct": true },
+      { "answer": "Glicerol", "correct": false },
+      { "answer": "Ácidos graxos", "correct": false }
     ]
   },
   {
-    "question": "Em qual região e período histórico a escrita surgiu pela primeira vez no mundo ocidental? Qual o impacto dessa descoberta na sociedade e na cultura?",
+    "question": "Em que tipo de alimentos podemos encontrar uma boa quantidade de proteínas?",
     "answers": [
-      { "answer": "Mesopotâmia, entre 3500 e 3000 a.C. A escrita permitiu o registro de informações, leis, literatura e conhecimentos, impulsionando o desenvolvimento social, cultural e econômico.", "correct": true },
-      { "answer": "Egito Antigo, por volta de 3200 a.C. A escrita hieroglífica era utilizada para fins religiosos, administrativos e literários, preservando a história e a cultura do povo egípcio.", "correct": true },
-      { "answer": "Grécia Antiga, no século VIII a.C. O alfabeto grego, com suas 24 letras, possibilitou o desenvolvimento da literatura, da filosofia e da ciência, influenciando a civilização ocidental como um todo.", "correct": true },
-      { "answer": "Roma Antiga, no século III a.C. O alfabeto latino, derivado do grego, foi fundamental para a expansão do Império Romano e para a comunicação em todo o Mediterrâneo.", "correct": true },
-      { "answer": "Todas as alternativas acima, pois a escrita teve um papel crucial no desenvolvimento das civilizações ocidentais antigas.", "correct": true }
+      { "answer": "Frutas", "correct": false },
+      { "answer": "Legumes", "correct": true },
+      { "answer": "Carnes, ovos e laticínios", "correct": true },
+      { "answer": "Massas e pães", "correct": false }
     ]
   },
   {
-    "question": "A escultura arcaica grega apresenta características marcantes que a distinguem dos períodos posteriores. Quais são as principais características da escultura arcaica?",
+    "question": "Qual das alternativas a seguir NÃO é uma função das proteínas no corpo humano?",
     "answers": [
-      { "answer": "Naturalismo: Representação realista da anatomia humana, com proporções perfeitas e movimentos fluidos.", "correct": false },
-      { "answer": "Rigidez: Figuras estáticas e formais, com pouca expressividade facial e movimentos limitados.", "correct": true },
-      { "answer": "Idealização: Representação de figuras heroicas e divinas com beleza idealizada, transcendendo a realidade humana.", "correct": true },
-      { "answer": "Sorriso arcaico: Expressão facial característica, presente em muitas esculturas arcaicas, que transmite uma sensação de serenidade e distanciamento.", "correct": true },
-      { "answer": "Todas as alternativas acima, pois a escultura arcaica apresenta uma combinação de rigidez, idealização e o enigmático sorriso arcaico.", "correct": true }
+      { "answer": "Construção e reparo de tecidos.", "correct": false },
+      { "answer": "Transporte de oxigênio no sangue.", "correct": true },
+      { "answer": "Ação enzimática.", "correct": false },
+      { "answer": "Armazenamento de energia a longo prazo.", "correct": true }
     ]
   },
   {
-    "question": "A escultura clássica grega marca um período de grande desenvolvimento artístico e técnico. Quais são as principais inovações da escultura clássica em relação ao período arcaico?",
+    "question": "Qual é a principal função das proteínas no corpo humano?",
     "answers": [
-      { "answer": "Naturalismo: As figuras se tornam mais realistas e expressivas, com proporções perfeitas, anatomia precisa e movimentos naturais.", "correct": true },
-      { "answer": "Dinamismo: As esculturas clássicas transmitem movimento e ação, capturando momentos decisivos e expressando emoções com mais intensidade.", "correct": true },
-      { "answer": "Contraposto: Técnica de escultura que cria uma sensação de equilíbrio e movimento através da contraposição de membros e linhas do corpo.", "correct": true },
-      { "answer": "Idealização: A beleza idealizada continua presente, mas com maior naturalidade e expressividade, buscando a perfeição humana.", "correct": true },
-      { "answer": "Todas as alternativas acima, pois a escultura clássica se caracteriza por um maior naturalismo, dinamismo, uso do contraposto e busca pela beleza idealizada.", "correct": true }
+      { "answer": "Energia", "correct": false },
+      { "answer": "Transporte de nutrientes", "correct": true },
+      { "answer": "Reparo e crescimento dos tecidos", "correct": true },
+      { "answer": "Armazenamento de vitaminas", "correct": false }
     ]
   },
   {
-    "question": "A escultura helenística se caracteriza por uma grande variedade de estilos e temas. Quais são as principais características da escultura helenística e quais exemplos famosos podemos citar?",
+    "question": "Quais são os blocos de construção das proteínas?",
     "answers": [
-      { "answer": "Naturalismo extremo: Representação fiel da anatomia humana, com detalhes realistas de músculos, veias e rugas, buscando a perfeição técnica. Exemplo: 'Laocoonte e seus Filhos' de Agesandros, Polidoro e Atenodoro.", "correct": true },
-      { "answer": "Dramaticidade e teatralidade: As esculturas helenísticas frequentemente retratam momentos dramáticos, emoções intensas e movimentos expressivos, utilizando recursos como o contraposto e a diagonal. Exemplo: 'Gálata Moribundo' de Epígono.", "correct": true },
-      { "answer": "Realismo psicológico: Retrato de personagens com individualidade e personalidade, expressando sentimentos e estados de espírito complexos. Exemplo: 'Busto de Afrodite de Tralles'.", "correct": true },
-      { "answer": "Influências de diversas culturas: A arte helenística incorporou elementos de culturas como egípcia, persa e oriental, criando um estilo eclético e rico em detalhes. Exemplo: 'Vênus de Willendorf'.", "correct": false },
-      { "answer": "Todas as alternativas acima, pois a escultura helenística se caracteriza por sua diversidade de estilos, realismo extremo, dramaticidade, realismo psicológico e influências de diversas culturas.", "correct": true }
+      { "answer": "Monossacarídeos", "correct": false },
+      { "answer": "Aminoácidos", "correct": true },
+      { "answer": "Ácidos graxos", "correct": false },
+      { "answer": "Nucleotídeos", "correct": false }
+    ]
+  },
+  {
+    "question": "O que são enzimas?",
+    "answers": [
+      { "answer": "Carboidratos encontrados em frutas", "correct": false },
+      { "answer": "Proteínas que atuam como catalisadores em reações químicas biológicas", "correct": true },
+      { "answer": "Lipídios presentes em óleos vegetais", "correct": false },
+      { "answer": "Vitaminas encontradas em vegetais verdes", "correct": false }
+    ]
+  },
+  {
+    "question": "Qual é a função principal das enzimas no corpo humano?",
+    "answers": [
+      { "answer": "Armazenar energia", "correct": false },
+      { "answer": "Transportar oxigênio", "correct": false },
+      { "answer": "Acelerar as reações químicas", "correct": true },
+      { "answer": "Regular a temperatura corporal", "correct": false }
+    ]
+  },
+  {
+    "question": "O que acontece com a forma da enzima quando ela está ativa em uma reação?",
+    "answers": [
+      { "answer": "Ela se desintegra", "correct": false },
+      { "answer": "Ela permanece inalterada", "correct": false },
+      { "answer": "Ela se transforma em outra molécula", "correct": false },
+      { "answer": "Ela se dobra para se encaixar ao substrato", "correct": true }
+    ]
+  },
+  {
+    "question": "(Bônus) O local da molécula da enzima onde o substrato se liga é chamado de:",
+    "answers": [
+      { "answer": "Cofator", "correct": false },
+      { "answer": "Centro ativo", "correct": true },
+      { "answer": "Sítio alostérico", "correct": false },
+      { "answer": "Apoenzima", "correct": false }
+    ]
+  },
+  {
+    "question": "(Bônus) Fatores que podem influenciar a atividade enzimática incluem:",
+    "answers": [
+      { "answer": "Temperatura, pH e concentração de substrato.", "correct": true },
+      { "answer": "Apenas a temperatura.", "correct": false },
+      { "answer": "Apenas o pH.", "correct": false },
+      { "answer": "Apenas a concentração de substrato.", "correct": false }
     ]
   }
+        
   
-  
-  
+    
   
 ];
 
