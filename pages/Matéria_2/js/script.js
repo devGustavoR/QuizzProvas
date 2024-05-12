@@ -10,215 +10,135 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
   {
-    "question": "Em que direção o Sol se põe em relação ao ponto cardeal oeste?",
+    "question": "Qual das alternativas a seguir melhor resume a principal diferença entre a filosofia de Sócrates e a sofística?",
     "answers": [
-      {
-        "answer": "Norte",
-        "correct": false
-      },
-      {
-        "answer": "Sul",
-        "correct": false
-      },
-      {
-        "answer": "Leste",
-        "correct": false
-      },
-      {
-        "answer": "Oeste",
-        "correct": true
-      }
+      { "answer": "Sócrates buscava a verdade absoluta, enquanto os sofistas relativizavam o conhecimento.", "correct": true },
+      { "answer": "Sócrates valorizava o diálogo e a maiêutica, enquanto os sofistas se preocupavam com a retórica e a persuasão.", "correct": true },
+      { "answer": "Sócrates defendia a ética e a justiça, enquanto os sofistas se concentravam no sucesso individual e na fama.", "correct": true },
+      { "answer": "Todas as alternativas acima estão corretas.", "correct": true }
     ]
   },
   {
-    "question": "Se você estiver de frente para o nascer do sol, em que direção estará olhando?",
+    "question": "Qual das alternativas a seguir NÃO era um dos principais temas abordados por Sócrates em seus diálogos?",
     "answers": [
-      {
-        "answer": "Oeste",
-        "correct": false
-      },
-      {
-        "answer": "Leste",
-        "correct": true
-      },
-      {
-        "answer": "Norte",
-        "correct": false
-      },
-      {
-        "answer": "Sul",
-        "correct": false
-      }
+      { "answer": "Ética", "correct": false },
+      { "answer": "Política", "correct": false },
+      { "answer": "Metafísica", "correct": true },
+      { "answer": "Matemática", "correct": false }
     ]
   },
   {
-    "question": "Qual é a latitude do Polo Norte?",
+    "question": "Qual dos sofistas a seguir era conhecido por sua crítica à democracia ateniense?",
     "answers": [
-      {
-        "answer": "0°",
-        "correct": false
-      },
-      {
-        "answer": "23,5° N",
-        "correct": false
-      },
-      {
-        "answer": "66,5° N",
-        "correct": false
-      },
-      {
-        "answer": "90° N",
-        "correct": true
-      }
+      { "answer": "Protágoras", "correct": false },
+      { "answer": "Górgias", "correct": false },
+      { "answer": "Trasímaco", "correct": true },
+      { "answer": "Hipocrato", "correct": false }
     ]
   },
   {
-    "question": "O que é o meridiano de Greenwich?",
+    "question": "Quem foi Sócrates na filosofia grega?",
     "answers": [
-      {
-        "answer": "Um paralelo que corta a América do Sul.",
-        "correct": false
-      },
-      {
-        "answer": "Uma linha que marca a longitude 0°.",
-        "correct": true
-      },
-      {
-        "answer": "Um círculo máximo que passa pelos polos da Terra.",
-        "correct": false
-      },
-      {
-        "answer": "Um paralelo que divide a Terra em hemisfério norte e hemisfério sul.",
-        "correct": false
-      }
+      { "answer": "Um sofista famoso por sua retórica persuasiva", "correct": false },
+      { "answer": "Um filósofo que defendia o relativismo moral", "correct": false },
+      { "answer": "Um mestre que buscava o conhecimento através do diálogo e da auto-reflexão.", "correct": true },
+      { "answer": "Um político que governou Atenas por muitos anos", "correct": false }
     ]
   },
   {
-    "question": "Qual é a diferença de tempo entre dois fusos horários consecutivos?",
+    "question": "Qual foi a principal preocupação de Sócrates em suas discussões filosóficas?",
     "answers": [
-      {
-        "answer": "30 minutos",
-        "correct": false
-      },
-      {
-        "answer": "1 hora",
-        "correct": true
-      },
-      {
-        "answer": "2 horas",
-        "correct": false
-      },
-      {
-        "answer": "3 horas",
-        "correct": false
-      }
+      { "answer": "Descobrir a melhor forma de persuadir os outros.", "correct": false },
+      { "answer": "Examinar a natureza da realidade física.", "correct": false },
+      { "answer": "Buscar a verdade e a sabedoria através do autoconhecimento e da reflexão.", "correct": true },
+      { "answer": "Promover sua própria carreira política.", "correct": false }
     ]
   },
   {
-    "question": "Se uma cidade está localizada no fuso horário UTC-5 e outra cidade está no fuso horário UTC+3, quantas horas de diferença existem entre elas?",
+    "question": "Qual dos mitos gregos melhor ilustra a teoria da reminiscência de Platão, segundo a qual o conhecimento já está presente na alma desde o nascimento?",
     "answers": [
-      {
-        "answer": "8 horas",
-        "correct": true
-      },
-      {
-        "answer": "10 horas",
-        "correct": false
-      },
-      {
-        "answer": "12 horas",
-        "correct": false
-      },
-      {
-        "answer": "16 horas",
-        "correct": false
-      }
+      { "answer": "O mito de Prometeu", "correct": false },
+      { "answer": "O mito de Sísifo", "correct": false },
+      { "answer": "O mito de Narciso", "correct": false },
+      { "answer": "O mito da Caverna", "correct": true }
     ]
   },
   {
-    "question": "Se uma escala cartográfica é 1:100.000, o que isso significa?",
+    "question": "Qual das alternativas a seguir NÃO é uma crítica à teoria política de Platão?",
     "answers": [
-      {
-        "answer": "Cada unidade no mapa representa 100.000 unidades na realidade.",
-        "correct": false
-      },
-      {
-        "answer": "Cada unidade na realidade representa 100.000 unidades no mapa.",
-        "correct": false
-      },
-      {
-        "answer": "O mapa tem 100.000 vezes o tamanho da área real.",
-        "correct": false
-      },
-      {
-        "answer": "O mapa tem 1/100.000 do tamanho da área real.",
-        "correct": true
-      }
+      { "answer": "A Cidade Ideal é um modelo utópico e irrealizável na prática.", "correct": true },
+      { "answer": "A divisão da sociedade em classes sociais pode gerar desigualdade e conflitos.", "correct": false },
+      { "answer": "A valorização excessiva da razão pode levar à repressão das emoções e à negação da individualidade.", "correct": false },
+      { "answer": "A filosofia de Platão não oferece soluções concretas para os problemas sociais e políticos do mundo real.", "correct": false }
     ]
   },
   {
-    "question": "Qual é a função principal da escala cartográfica em um mapa?",
+    "question": "Na Cidade Ideal de Platão, qual das alternativas a seguir melhor representa o papel dos filósofos-reis?",
     "answers": [
-      {
-        "answer": "Indicar a direção dos pontos cardeais.",
-        "correct": false
-      },
-      {
-        "answer": "Mostrar a altitude das montanhas e vales.",
-        "correct": false
-      },
-      {
-        "answer": "Representar a proporção entre as dimensões reais da Terra e as dimensões da representação no mapa.",
-        "correct": true
-      },
-      {
-        "answer": "Indicar a densidade populacional de uma região.",
-        "correct": false
-      }
+      { "answer": "Governar a cidade com sabedoria e justiça, buscando o bem comum.", "correct": true },
+      { "answer": "Defender a cidade contra inimigos externos e manter a ordem interna.", "correct": false },
+      { "answer": "Realizar trabalhos manuais e garantir a produção de bens materiais.", "correct": false },
+      { "answer": "Buscar o conhecimento e a verdade, mas sem interferir na política.", "correct": false }
     ]
   },
   {
-    "question": "Qual é a forma aproximada da Terra?",
+    "question": "Na visão de Platão, qual é o papel do filósofo na cidade ideal?",
     "answers": [
-      {
-        "answer": "Cilíndrica",
-        "correct": false
-      },
-      {
-        "answer": "Esférica",
-        "correct": true
-      },
-      {
-        "answer": "Cúbica",
-        "correct": false
-      },
-      {
-        "answer": "Oval",
-        "correct": false
-      }
+      { "answer": "Governar como um rei absoluto", "correct": false },
+      { "answer": "Ser um líder militar", "correct": false },
+      { "answer": "Guiar e aconselhar os governantes, compartilhando sua sabedoria filosófica", "correct": true },
+      { "answer": "Ignorar assuntos políticos e se concentrar apenas em questões metafísicas", "correct": false }
     ]
   },
   {
-    "question": "O que é uma órbita?",
+    "question": "Qual dos seguintes filósofos NÃO foi aluno de Aristóteles na Academia de Atenas?",
     "answers": [
-      {
-        "answer": "O tempo que a Terra leva para completar uma rotação em torno de si mesma.",
-        "correct": false
-      },
-      {
-        "answer": "O movimento da Terra em torno do Sol.",
-        "correct": false
-      },
-      {
-        "answer": "A trajetória que um satélite ou planeta percorre ao redor de outro corpo celeste.",
-        "correct": true
-      },
-      {
-        "answer": "O período em que o Sol atinge sua maior altitude no céu.",
-        "correct": false
-      }
+      { "answer": "Platão", "correct": true },
+      { "answer": "Alexandre, o Grande", "correct": false },
+      { "answer": "Teofrasto", "correct": false },
+      { "answer": "Epicuro", "correct": true }
     ]
   },
+  {
+    "question": "Qual das alternativas a seguir NÃO é uma das áreas do conhecimento em que Aristóteles fez importantes contribuições?",
+    "answers": [
+      { "answer": "Lógica", "correct": false },
+      { "answer": "Metafísica", "correct": false },
+      { "answer": "Ética", "correct": false },
+      { "answer": "Matemática", "correct": true }
+    ]
+  },
+  {
+    "question": "Qual das alternativas a seguir NÃO é uma característica fundamental da filosofia de Aristóteles?",
+    "answers": [
+      { "answer": "A busca pelo conhecimento através da observação e da experiência.", "correct": true },
+      { "answer": "A valorização da razão como principal ferramenta para alcançar a verdade.", "correct": true },
+      { "answer": "A crença na existência de um mundo ideal e perfeito além do mundo físico.", "correct": false },
+      { "answer": "A importância da ética e da política para a construção de uma vida boa e justa.", "correct": true }
+    ]
+  },
+  {
+    "question": "(Bônus) Qual é o termo aristotélico que descreve a busca pela moderação e equilíbrio em todas as coisas?",
+    "answers": [
+      { "answer": "Virtude", "correct": true },
+      { "answer": "Hedonismo", "correct": false },
+      { "answer": "Epicurismo", "correct": false },
+      { "answer": "Eudaimonia", "correct": false }
+    ]
+  },
+  {
+    "question": "(Bônus) Qual é a obra mais conhecida de Aristóteles que aborda uma ampla gama de temas, incluindo ética, política, metafísica e ciência?",
+    "answers": [
+      { "answer": "Ética a Nicômaco", "correct": true },
+      { "answer": "A República", "correct": false },
+      { "answer": "A Política", "correct": false },
+      { "answer": "A Arte da Guerra", "correct": false }
+    ]
+  }
+  
+                    
+    
+  
 ];
 
 // substituição do quizz para a primeira pergunta
