@@ -40,7 +40,7 @@ const questions = [
     ]
   },
   {
-    "question": "1. Qual das alternativas NÃO é característica da literatura épica medieval?",
+    "question": "4. Qual das alternativas NÃO é característica da literatura épica medieval?",
     "answers": [
       { "answer": "Presença de heróis com qualidades sobre-humanas.", "correct": false },
       { "answer": "Temas religiosos e mitológicos.", "correct": false },
@@ -50,7 +50,7 @@ const questions = [
     ]
   },
   {
-    "question": "2. Qual das obras a seguir NÃO é considerada um poema épico medieval?",
+    "question": "5. Qual das obras a seguir NÃO é considerada um poema épico medieval?",
     "answers": [
       { "answer": "Canção de Roldão (França).", "correct": false },
       { "answer": "Nibelungenlied (Alemanha).", "correct": false },
@@ -60,7 +60,7 @@ const questions = [
     ]
   },
   {
-    "question": "3. Qual era o papel dos trovadores na sociedade medieval?",
+    "question": "6. Qual era o papel dos trovadores na sociedade medieval?",
     "answers": [
       { "answer": "Eram cavaleiros que lutavam em batalhas épicas.", "correct": false },
       { "answer": "Eram clérigos responsáveis pela administração da Igreja.", "correct": false },
@@ -70,7 +70,7 @@ const questions = [
     ]
   },
   {
-    "question": "4. Qual dos autores a seguir é considerado um dos principais representantes do trovadorismo português?",
+    "question": "7. Qual dos autores a seguir é considerado um dos principais representantes do trovadorismo português?",
     "answers": [
       { "answer": "Dom Dinis.", "correct": true },
       { "answer": "Luís de Camões.", "correct": false },
@@ -80,7 +80,7 @@ const questions = [
     ]
   },
   {
-    "question": "1. Qual das alternativas define melhor a prosa?",
+    "question": "8. Qual das alternativas define melhor a prosa?",
     "answers": [
       { "answer": "Linguagem concisa e densa, com foco na musicalidade e ritmo.", "correct": false },
       { "answer": "Expressão direta e objetiva, utilizando frases curtas e linguagem coloquial.", "correct": true },
@@ -90,7 +90,7 @@ const questions = [
     ]
   },
   {
-    "question": "2. Qual das alternativas NÃO é uma característica da poesia?",
+    "question": "9. Qual das alternativas NÃO é uma característica da poesia?",
     "answers": [
       { "answer": "Linguagem concisa e expressiva, com uso de figuras de linguagem.", "correct": false },
       { "answer": "Estrutura livre ou com métrica e ritmo definidos.", "correct": false },
@@ -100,7 +100,7 @@ const questions = [
     ]
   },
   {
-    "question": "3. O que é autoria literária?",
+    "question": "10. O que é autoria literária?",
     "answers": [
       { "answer": "A capacidade de ler e interpretar textos literários de forma crítica.", "correct": false },
       { "answer": "A produção de textos literários originais, expressando a visão e a criatividade do autor.", "correct": true },
@@ -110,7 +110,7 @@ const questions = [
     ]
   },
   {
-    "question": "4. Qual dos autores a seguir é considerado um dos principais representantes da prosa modernista brasileira?",
+    "question": "11. Qual dos autores a seguir é considerado um dos principais representantes da prosa modernista brasileira?",
     "answers": [
       { "answer": "Machado de Assis.", "correct": false },
       { "answer": "José de Alencar.", "correct": false },

@@ -10,135 +10,108 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
   {
-    "question": "Qual das alternativas a seguir melhor resume a principal diferença entre a filosofia de Sócrates e a sofística?",
+    "question": "1. Qual período da Pré-História se caracteriza pelo uso de ferramentas rudimentares de pedra lascada e pela caça e coleta como principais atividades de subsistência?",
     "answers": [
-      { "answer": "Sócrates buscava a verdade absoluta, enquanto os sofistas relativizavam o conhecimento.", "correct": true },
-      { "answer": "Sócrates valorizava o diálogo e a maiêutica, enquanto os sofistas se preocupavam com a retórica e a persuasão.", "correct": true },
-      { "answer": "Sócrates defendia a ética e a justiça, enquanto os sofistas se concentravam no sucesso individual e na fama.", "correct": true },
-      { "answer": "Todas as alternativas acima estão corretas.", "correct": true }
+      { "answer": "Paleolítico Superior", "correct": false },
+      { "answer": "Paleolítico Inferior", "correct": true },
+      { "answer": "Mesolítico", "correct": false },
+      { "answer": "Neolítico", "correct": false },
+      { "answer": "Idade dos Metais", "correct": false }
     ]
   },
   {
-    "question": "Qual das alternativas a seguir NÃO era um dos principais temas abordados por Sócrates em seus diálogos?",
+    "question": "2. Qual das alternativas a seguir NÃO é uma característica da arte rupestre paleolítica?",
     "answers": [
-      { "answer": "Ética", "correct": false },
-      { "answer": "Política", "correct": false },
-      { "answer": "Metafísica", "correct": true },
-      { "answer": "Matemática", "correct": false }
+      { "answer": "Representação de animais selvagens, como bisões, mamutes e cavalos.", "correct": false },
+      { "answer": "Figuras humanas estilizadas e com poucos detalhes.", "correct": true },
+      { "answer": "Uso de cores vibrantes e técnicas complexas de pintura.", "correct": true },
+      { "answer": "Temas relacionados à caça, à guerra e à vida cotidiana.", "correct": false },
+      { "answer": "Localização em cavernas e abrigos rochosos.", "correct": false }
     ]
   },
   {
-    "question": "Qual dos sofistas a seguir era conhecido por sua crítica à democracia ateniense?",
+    "question": "3. Qual foi a principal transformação social e econômica que ocorreu durante a Revolução Neolítica?",
     "answers": [
-      { "answer": "Protágoras", "correct": false },
-      { "answer": "Górgias", "correct": false },
-      { "answer": "Trasímaco", "correct": true },
-      { "answer": "Hipocrato", "correct": false }
+      { "answer": "Adoção da agricultura e da domesticação de animais.", "correct": true },
+      { "answer": "Desenvolvimento de ferramentas de metalurgia.", "correct": false },
+      { "answer": "Surgimento das primeiras cidades e civilizações.", "correct": false },
+      { "answer": "Expansão das sociedades nômades para novas regiões.", "correct": false },
+      { "answer": "Aperfeiçoamento das técnicas de caça e coleta.", "correct": false }
     ]
   },
   {
-    "question": "Quem foi Sócrates na filosofia grega?",
+    "question": "4. Qual dos monumentos megalíticos a seguir é considerado um dos mais importantes da Pré-História na Europa?",
     "answers": [
-      { "answer": "Um sofista famoso por sua retórica persuasiva", "correct": false },
-      { "answer": "Um filósofo que defendia o relativismo moral", "correct": false },
-      { "answer": "Um mestre que buscava o conhecimento através do diálogo e da auto-reflexão.", "correct": true },
-      { "answer": "Um político que governou Atenas por muitos anos", "correct": false }
+      { "answer": "Stonehenge (Inglaterra)", "correct": true },
+      { "answer": "Carnac (França)", "correct": false },
+      { "answer": "Göbekli Tepe (Turquia)", "correct": false },
+      { "answer": "Moai (Ilha de Páscoa)", "correct": false },
+      { "answer": "Machu Picchu (Peru)", "correct": false }
     ]
   },
   {
-    "question": "Qual foi a principal preocupação de Sócrates em suas discussões filosóficas?",
+    "question": "5. Qual civilização da Antiguidade Oriental era conhecida por sua complexa organização social, avançados conhecimentos em matemática e astronomia, e pela construção de pirâmides e monumentos grandiosos?",
     "answers": [
-      { "answer": "Descobrir a melhor forma de persuadir os outros.", "correct": false },
-      { "answer": "Examinar a natureza da realidade física.", "correct": false },
-      { "answer": "Buscar a verdade e a sabedoria através do autoconhecimento e da reflexão.", "correct": true },
-      { "answer": "Promover sua própria carreira política.", "correct": false }
+      { "answer": "Mesopotâmia", "correct": false },
+      { "answer": "Egito Antigo", "correct": true },
+      { "answer": "Índia Antiga", "correct": false },
+      { "answer": "China Antiga", "correct": false },
+      { "answer": "Civilização Olmeca", "correct": false }
     ]
   },
   {
-    "question": "Qual dos mitos gregos melhor ilustra a teoria da reminiscência de Platão, segundo a qual o conhecimento já está presente na alma desde o nascimento?",
+    "question": "6. Qual das alternativas a seguir NÃO é uma característica marcante da religião politeísta presente em diversas civilizações da Antiguidade Oriental?",
     "answers": [
-      { "answer": "O mito de Prometeu", "correct": false },
-      { "answer": "O mito de Sísifo", "correct": false },
-      { "answer": "O mito de Narciso", "correct": false },
-      { "answer": "O mito da Caverna", "correct": true }
+      { "answer": "Adoração de vários deuses e deusas, cada um com seus próprios poderes e atributos.", "correct": false },
+      { "answer": "Crença em uma vida após a morte e na importância dos rituais funerários.", "correct": false },
+      { "answer": "Presença de uma classe sacerdotal responsável pela comunicação entre os deuses e os homens.", "correct": false },
+      { "answer": "Adoção de um único deus como divindade suprema, criadora do universo.", "correct": true },
+      { "answer": "Construção de templos e monumentos grandiosos em homenagem aos deuses.", "correct": false }
     ]
   },
   {
-    "question": "Qual das alternativas a seguir NÃO é uma crítica à teoria política de Platão?",
+    "question": "7. Qual dos sistemas de escrita a seguir foi desenvolvido na Mesopotâmia e teve grande influência na criação de outros alfabetos ao redor do mundo?",
     "answers": [
-      { "answer": "A Cidade Ideal é um modelo utópico e irrealizável na prática.", "correct": true },
-      { "answer": "A divisão da sociedade em classes sociais pode gerar desigualdade e conflitos.", "correct": false },
-      { "answer": "A valorização excessiva da razão pode levar à repressão das emoções e à negação da individualidade.", "correct": false },
-      { "answer": "A filosofia de Platão não oferece soluções concretas para os problemas sociais e políticos do mundo real.", "correct": false }
+      { "answer": "Hieróglifos", "correct": false },
+      { "answer": "Cuneiforme", "correct": true },
+      { "answer": "Ideogramas", "correct": false },
+      { "answer": "Alfabeto fonético", "correct": false },
+      { "answer": "Escrita silábica", "correct": false }
     ]
   },
   {
-    "question": "Na Cidade Ideal de Platão, qual das alternativas a seguir melhor representa o papel dos filósofos-reis?",
+    "question": "8. Qual das alternativas a seguir NÃO é uma característica fundamental da Grécia Antiga?",
     "answers": [
-      { "answer": "Governar a cidade com sabedoria e justiça, buscando o bem comum.", "correct": true },
-      { "answer": "Defender a cidade contra inimigos externos e manter a ordem interna.", "correct": false },
-      { "answer": "Realizar trabalhos manuais e garantir a produção de bens materiais.", "correct": false },
-      { "answer": "Buscar o conhecimento e a verdade, mas sem interferir na política.", "correct": false }
+      { "answer": "Adoção da democracia como sistema de governo, com participação dos cidadãos nas decisões políticas.", "correct": false },
+      { "answer": "Desenvolvimento de uma rica cultura, incluindo filosofia, teatro, literatura, escultura e arquitetura.", "correct": false },
+      { "answer": "Influência marcante do politeísmo, com crença em diversos deuses e deusas.", "correct": false },
+      { "answer": "Expansão territorial por meio da conquista militar, formando um império poderoso.", "correct": true },
+      { "answer": "Divisão da sociedade em classes sociais desiguais, com escravos na base da pirâmide social.", "correct": false }
     ]
   },
   {
-    "question": "Na visão de Platão, qual é o papel do filósofo na cidade ideal?",
+    "question": "9. Qual foi o principal conflito militar entre gregos e persas durante a Antiguidade Clássica?",
     "answers": [
-      { "answer": "Governar como um rei absoluto", "correct": false },
-      { "answer": "Ser um líder militar", "correct": false },
-      { "answer": "Guiar e aconselhar os governantes, compartilhando sua sabedoria filosófica", "correct": true },
-      { "answer": "Ignorar assuntos políticos e se concentrar apenas em questões metafísicas", "correct": false }
+      { "answer": "Guerra do Peloponeso", "correct": false },
+      { "answer": "Guerras Médicas", "correct": true },
+      { "answer": "Batalha de Termópilas", "correct": false },
+      { "answer": "Conquista de Esparta por Atenas", "correct": false },
+      { "answer": "Expedição de Alexandre, o Grande", "correct": false }
     ]
   },
   {
-    "question": "Qual dos seguintes filósofos NÃO foi aluno de Aristóteles na Academia de Atenas?",
+    "question": "10. Qual era o objetivo principal das Olimpíadas na Grécia Antiga?",
     "answers": [
-      { "answer": "Platão", "correct": true },
-      { "answer": "Alexandre, o Grande", "correct": false },
-      { "answer": "Teofrasto", "correct": false },
-      { "answer": "Epicuro", "correct": true }
+      { "answer": "Celebrar os deuses gregos e promover a fé religiosa.", "correct": false },
+      { "answer": "Unificar as diferentes cidades-estados gregas em torno de um evento esportivo.", "correct": true },
+      { "answer": "Estimular o desenvolvimento da cultura e da arte na Grécia Antiga.", "correct": false },
+      { "answer": "Treinar soldados para as guerras que eram travadas entre as cidades-estados.", "correct": false },
+      { "answer": "Promover o comércio e a interação entre os povos do Mediterrâneo.", "correct": false }
     ]
   },
-  {
-    "question": "Qual das alternativas a seguir NÃO é uma das áreas do conhecimento em que Aristóteles fez importantes contribuições?",
-    "answers": [
-      { "answer": "Lógica", "correct": false },
-      { "answer": "Metafísica", "correct": false },
-      { "answer": "Ética", "correct": false },
-      { "answer": "Matemática", "correct": true }
-    ]
-  },
-  {
-    "question": "Qual das alternativas a seguir NÃO é uma característica fundamental da filosofia de Aristóteles?",
-    "answers": [
-      { "answer": "A busca pelo conhecimento através da observação e da experiência.", "correct": true },
-      { "answer": "A valorização da razão como principal ferramenta para alcançar a verdade.", "correct": true },
-      { "answer": "A crença na existência de um mundo ideal e perfeito além do mundo físico.", "correct": false },
-      { "answer": "A importância da ética e da política para a construção de uma vida boa e justa.", "correct": true }
-    ]
-  },
-  {
-    "question": "(Bônus) Qual é o termo aristotélico que descreve a busca pela moderação e equilíbrio em todas as coisas?",
-    "answers": [
-      { "answer": "Virtude", "correct": true },
-      { "answer": "Hedonismo", "correct": false },
-      { "answer": "Epicurismo", "correct": false },
-      { "answer": "Eudaimonia", "correct": false }
-    ]
-  },
-  {
-    "question": "(Bônus) Qual é a obra mais conhecida de Aristóteles que aborda uma ampla gama de temas, incluindo ética, política, metafísica e ciência?",
-    "answers": [
-      { "answer": "Ética a Nicômaco", "correct": true },
-      { "answer": "A República", "correct": false },
-      { "answer": "A Política", "correct": false },
-      { "answer": "A Arte da Guerra", "correct": false }
-    ]
-  }
+        
   
-                    
-    
-  
+              
 ];
 
 // substituição do quizz para a primeira pergunta
