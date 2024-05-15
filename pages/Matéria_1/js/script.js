@@ -10,143 +10,116 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
   {
-    "question": "Qual dos grupos de substâncias NÃO é um tipo de lipídio?",
+    "question": "1. Qual das alternativas apresenta apenas substantivos?",
     "answers": [
-      { "answer": "Carotenoides", "correct": false },
-      { "answer": "Oligossacarídeos", "correct": true },
-      { "answer": "Cerídeos", "correct": false },
-      { "answer": "Esteroides", "correct": false },
-      { "answer": "Fosfolipídios", "correct": false }
+      { "answer": "Cantar, correr, amar.", "correct": false },
+      { "answer": "Mesa, livro, árvore.", "correct": true },
+      { "answer": "Cantar, amor, árvore.", "correct": false },
+      { "answer": "Mesa, correr, livro.", "correct": false },
+      { "answer": "Amar, livro, correr.", "correct": false }
     ]
   },
   {
-    "question": "Os triglicerídeos são um tipo de lipídio composto por:",
+    "question": "2. Identifique a classe morfológica da palavra destacada em negrito: \"Ontem, assisti a um filme **muito interessante**.\"",
     "answers": [
-      { "answer": "Uma molécula de glicerol e três ácidos graxos.", "correct": true },
-      { "answer": "Uma molécula de glicerol e dois ácidos graxos.", "correct": false },
-      { "answer": "Um ácido graxo e duas moléculas de glicerol.", "correct": false },
-      { "answer": "Três moléculas de glicerol e um ácido graxo.", "correct": false }
+      { "answer": "Substantivo.", "correct": false },
+      { "answer": "Adjetivo.", "correct": true },
+      { "answer": "Pronome.", "correct": false },
+      { "answer": "Verbo.", "correct": false },
+      { "answer": "Preposição.", "correct": false }
     ]
   },
   {
-    "question": "Qual dos itens a seguir NÃO é um tipo de lipídio?",
+    "question": "3. Escolha a alternativa que completa a frase corretamente: \"As crianças _____ brincar no parque.\"",
     "answers": [
-      { "answer": "Ceras", "correct": false },
-      { "answer": "Carboidratos", "correct": true },
-      { "answer": "Fosfolipídios", "correct": false },
-      { "answer": "Óleos", "correct": false }
+      { "answer": "gostam de", "correct": true },
+      { "answer": "gosta de", "correct": false },
+      { "answer": "gostam", "correct": false },
+      { "answer": "gosta", "correct": false },
+      { "answer": "gostar", "correct": false }
     ]
   },
   {
-    "question": "A principal função dos lipídios no corpo humano é:",
+    "question": "1. Qual das alternativas NÃO é característica da literatura épica medieval?",
     "answers": [
-      { "answer": "Fornecer energia imediata.", "correct": false },
-      { "answer": "Armazenar energia a longo prazo.", "correct": true },
-      { "answer": "Formar a membrana celular.", "correct": false },
-      { "answer": "Transportar oxigênio no sangue.", "correct": false }
+      { "answer": "Presença de heróis com qualidades sobre-humanas.", "correct": false },
+      { "answer": "Temas religiosos e mitológicos.", "correct": false },
+      { "answer": "Uso de linguagem rebuscada e culta.", "correct": false },
+      { "answer": "Narrativa curta e com poucos personagens.", "correct": true },
+      { "answer": "Exaltação de valores como honra, bravura e fidelidade.", "correct": false }
     ]
   },
   {
-    "question": "Qual das alternativas a seguir NÃO é uma função das proteínas no corpo humano?",
+    "question": "2. Qual das obras a seguir NÃO é considerada um poema épico medieval?",
     "answers": [
-      { "answer": "Construção e reparo de tecidos.", "correct": false },
-      { "answer": "Transporte de oxigênio no sangue.", "correct": true },
-      { "answer": "Ação enzimática.", "correct": false },
-      { "answer": "Armazenamento de energia a longo prazo.", "correct": true }
+      { "answer": "Canção de Roldão (França).", "correct": false },
+      { "answer": "Nibelungenlied (Alemanha).", "correct": false },
+      { "answer": "Beowulf (Inglaterra).", "correct": false },
+      { "answer": "Eneida (Roma Antiga).", "correct": true },
+      { "answer": "Divina Comédia (Itália).", "correct": false }
     ]
   },
   {
-    "question": "As proteínas são compostas por moléculas menores chamadas:",
+    "question": "3. Qual era o papel dos trovadores na sociedade medieval?",
     "answers": [
-      { "answer": "Ácidos nucleicos", "correct": false },
-      { "answer": "Aminoácidos", "correct": true },
-      { "answer": "Glicerol", "correct": false },
-      { "answer": "Ácidos graxos", "correct": false }
+      { "answer": "Eram cavaleiros que lutavam em batalhas épicas.", "correct": false },
+      { "answer": "Eram clérigos responsáveis pela administração da Igreja.", "correct": false },
+      { "answer": "Eram poetas e músicos que compunham e cantavam cantigas sobre o amor, a guerra e outros temas.", "correct": true },
+      { "answer": "Eram camponeses que trabalhavam nas terras dos senhores feudais.", "correct": false },
+      { "answer": "Eram reis e rainhas que governavam os reinos medievais.", "correct": false }
     ]
   },
   {
-    "question": "Em que tipo de alimentos podemos encontrar uma boa quantidade de proteínas?",
+    "question": "4. Qual dos autores a seguir é considerado um dos principais representantes do trovadorismo português?",
     "answers": [
-      { "answer": "Frutas", "correct": false },
-      { "answer": "Legumes", "correct": true },
-      { "answer": "Carnes, ovos e laticínios", "correct": true },
-      { "answer": "Massas e pães", "correct": false }
+      { "answer": "Dom Dinis.", "correct": true },
+      { "answer": "Luís de Camões.", "correct": false },
+      { "answer": "Fernando Pessoa.", "correct": false },
+      { "answer": "José Saramago.", "correct": false },
+      { "answer": "Eça de Queirós.", "correct": false }
     ]
   },
   {
-    "question": "Qual das alternativas a seguir NÃO é uma função das proteínas no corpo humano?",
+    "question": "1. Qual das alternativas define melhor a prosa?",
     "answers": [
-      { "answer": "Construção e reparo de tecidos.", "correct": false },
-      { "answer": "Transporte de oxigênio no sangue.", "correct": true },
-      { "answer": "Ação enzimática.", "correct": false },
-      { "answer": "Armazenamento de energia a longo prazo.", "correct": true }
+      { "answer": "Linguagem concisa e densa, com foco na musicalidade e ritmo.", "correct": false },
+      { "answer": "Expressão direta e objetiva, utilizando frases curtas e linguagem coloquial.", "correct": true },
+      { "answer": "Estrutura rígida, com versos e rimas predefinidos.", "correct": false },
+      { "answer": "Linguagem simbólica e subjetiva, explorando emoções e sentimentos.", "correct": false },
+      { "answer": "Uso de recursos literários como metáforas e personificações.", "correct": false }
     ]
   },
   {
-    "question": "Qual é a principal função das proteínas no corpo humano?",
+    "question": "2. Qual das alternativas NÃO é uma característica da poesia?",
     "answers": [
-      { "answer": "Energia", "correct": false },
-      { "answer": "Transporte de nutrientes", "correct": true },
-      { "answer": "Reparo e crescimento dos tecidos", "correct": true },
-      { "answer": "Armazenamento de vitaminas", "correct": false }
+      { "answer": "Linguagem concisa e expressiva, com uso de figuras de linguagem.", "correct": false },
+      { "answer": "Estrutura livre ou com métrica e ritmo definidos.", "correct": false },
+      { "answer": "Foco na emoção e na subjetividade, explorando sentimentos e ideias.", "correct": false },
+      { "answer": "Narrativa linear e sequencial, com desenvolvimento de personagens e trama.", "correct": true },
+      { "answer": "Utilização de recursos sonoros como rima, ritmo e aliteração.", "correct": false }
     ]
   },
   {
-    "question": "Quais são os blocos de construção das proteínas?",
+    "question": "3. O que é autoria literária?",
     "answers": [
-      { "answer": "Monossacarídeos", "correct": false },
-      { "answer": "Aminoácidos", "correct": true },
-      { "answer": "Ácidos graxos", "correct": false },
-      { "answer": "Nucleotídeos", "correct": false }
+      { "answer": "A capacidade de ler e interpretar textos literários de forma crítica.", "correct": false },
+      { "answer": "A produção de textos literários originais, expressando a visão e a criatividade do autor.", "correct": true },
+      { "answer": "A análise e o estudo de obras literárias, contextualizando-as em seu período histórico.", "correct": false },
+      { "answer": "A tradução de obras literárias de um idioma para outro, preservando o sentido original.", "correct": false },
+      { "answer": "A organização e a catalogação de obras literárias em bibliotecas e museus.", "correct": false }
     ]
   },
   {
-    "question": "O que são enzimas?",
+    "question": "4. Qual dos autores a seguir é considerado um dos principais representantes da prosa modernista brasileira?",
     "answers": [
-      { "answer": "Carboidratos encontrados em frutas", "correct": false },
-      { "answer": "Proteínas que atuam como catalisadores em reações químicas biológicas", "correct": true },
-      { "answer": "Lipídios presentes em óleos vegetais", "correct": false },
-      { "answer": "Vitaminas encontradas em vegetais verdes", "correct": false }
-    ]
-  },
-  {
-    "question": "Qual é a função principal das enzimas no corpo humano?",
-    "answers": [
-      { "answer": "Armazenar energia", "correct": false },
-      { "answer": "Transportar oxigênio", "correct": false },
-      { "answer": "Acelerar as reações químicas", "correct": true },
-      { "answer": "Regular a temperatura corporal", "correct": false }
-    ]
-  },
-  {
-    "question": "O que acontece com a forma da enzima quando ela está ativa em uma reação?",
-    "answers": [
-      { "answer": "Ela se desintegra", "correct": false },
-      { "answer": "Ela permanece inalterada", "correct": false },
-      { "answer": "Ela se transforma em outra molécula", "correct": false },
-      { "answer": "Ela se dobra para se encaixar ao substrato", "correct": true }
-    ]
-  },
-  {
-    "question": "(Bônus) O local da molécula da enzima onde o substrato se liga é chamado de:",
-    "answers": [
-      { "answer": "Cofator", "correct": false },
-      { "answer": "Centro ativo", "correct": true },
-      { "answer": "Sítio alostérico", "correct": false },
-      { "answer": "Apoenzima", "correct": false }
-    ]
-  },
-  {
-    "question": "(Bônus) Fatores que podem influenciar a atividade enzimática incluem:",
-    "answers": [
-      { "answer": "Temperatura, pH e concentração de substrato.", "correct": true },
-      { "answer": "Apenas a temperatura.", "correct": false },
-      { "answer": "Apenas o pH.", "correct": false },
-      { "answer": "Apenas a concentração de substrato.", "correct": false }
+      { "answer": "Machado de Assis.", "correct": false },
+      { "answer": "José de Alencar.", "correct": false },
+      { "answer": "Mário de Andrade.", "correct": true },
+      { "answer": "Olavo Bilac.", "correct": false },
+      { "answer": "Gonçalves Dias.", "correct": false }
     ]
   }
-        
-  
+                  
     
   
 ];
