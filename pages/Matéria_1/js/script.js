@@ -10,116 +10,103 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
   {
-    "question": "1. Qual das alternativas apresenta apenas substantivos?",
+    "question": "1º Qual o nome da ferramenta que, segundo Aristóteles, nos permite analisar argumentos e identificar falhas de raciocínio?",
     "answers": [
-      { "answer": "Cantar, correr, amar.", "correct": false },
-      { "answer": "Mesa, livro, árvore.", "correct": true },
-      { "answer": "Cantar, amor, árvore.", "correct": false },
-      { "answer": "Mesa, correr, livro.", "correct": false },
-      { "answer": "Amar, livro, correr.", "correct": false }
+      { "answer": "Silogismo", "correct": true },
+      { "answer": "Ética", "correct": false },
+      { "answer": "Política", "correct": false },
+      { "answer": "Categoria", "correct": false },
+      { "answer": "Órgão", "correct": false }
+    ]
+  },  
+  {
+    "question": "2º O silogismo, um raciocínio dedutivo criado por Aristóteles, é composto por quais elementos?",
+    "answers": [
+      { "answer": "Felicidade, virtude e vício.", "correct": false },
+      { "answer": "Premissa maior, premissa menor e conclusão.", "correct": true },
+      { "answer": "Cidadão, justiça e bem comum.", "correct": false },
+      { "answer": "Alma racional, alma vegetativa e alma sensível.", "correct": false },
+      { "answer": "Forma e matéria.", "correct": false }
     ]
   },
   {
-    "question": "2. Identifique a classe morfológica da palavra destacada em negrito: \"Ontem, assisti a um filme **muito interessante**.\"",
+    "question": "3º As categorias de Aristóteles são conceitos universais que representam diferentes tipos de seres. Qual das alternativas a seguir não é uma categoria?",
     "answers": [
-      { "answer": "Substantivo.", "correct": false },
-      { "answer": "Adjetivo.", "correct": true },
-      { "answer": "Pronome.", "correct": false },
-      { "answer": "Verbo.", "correct": false },
-      { "answer": "Preposição.", "correct": false }
+      { "answer": "Substância", "correct": false },
+      { "answer": "Qualidade", "correct": false },
+      { "answer": "Quantidade", "correct": false },
+      { "answer": "Relação", "correct": false },
+      { "answer": "Emoção", "correct": true }
     ]
   },
   {
-    "question": "3. Escolha a alternativa que completa a frase corretamente: \"As crianças _____ brincar no parque.\"",
+    "question": "4º Para Aristóteles, qual é o objetivo final da vida humana?",
     "answers": [
-      { "answer": "gostam de", "correct": true },
-      { "answer": "gosta de", "correct": false },
-      { "answer": "gostam", "correct": false },
-      { "answer": "gosta", "correct": false },
-      { "answer": "gostar", "correct": false }
+      { "answer": "Alcançar a riqueza material.", "correct": false },
+      { "answer": "Buscar a fama e o reconhecimento.", "correct": false },
+      { "answer": "Viver uma vida de prazeres momentâneos.", "correct": false },
+      { "answer": "Conquistar o poder político.", "correct": false },
+      { "answer": "Alcançar a felicidade (eudaimonia) através da razão e da virtude.", "correct": true }
     ]
   },
   {
-    "question": "4. Qual das alternativas NÃO é característica da literatura épica medieval?",
+    "question": "5º O que Aristóteles considera como o caminho para a felicidade?",
     "answers": [
-      { "answer": "Presença de heróis com qualidades sobre-humanas.", "correct": false },
-      { "answer": "Temas religiosos e mitológicos.", "correct": false },
-      { "answer": "Uso de linguagem rebuscada e culta.", "correct": false },
-      { "answer": "Narrativa curta e com poucos personagens.", "correct": true },
-      { "answer": "Exaltação de valores como honra, bravura e fidelidade.", "correct": false }
+      { "answer": "A busca incessante por bens materiais.", "correct": false },
+      { "answer": "A prática de atividades físicas e a alimentação balanceada.", "correct": false },
+      { "answer": "O desenvolvimento de inteligência e habilidades cognitivas.", "correct": false },
+      { "answer": "O cultivo de virtudes como justiça, coragem e temperança.", "correct": true },
+      { "answer": "A obediência às regras e normas sociais.", "correct": false }
     ]
   },
   {
-    "question": "5. Qual das obras a seguir NÃO é considerada um poema épico medieval?",
+    "question": "6º O \"justo meio\" é um conceito central na ética aristotélica. O que ele significa?",
     "answers": [
-      { "answer": "Canção de Roldão (França).", "correct": false },
-      { "answer": "Nibelungenlied (Alemanha).", "correct": false },
-      { "answer": "Beowulf (Inglaterra).", "correct": false },
-      { "answer": "Eneida (Roma Antiga).", "correct": true },
-      { "answer": "Divina Comédia (Itália).", "correct": false }
+      { "answer": "Buscar sempre o meio termo em todas as situações.", "correct": false },
+      { "answer": "Encontrar um equilíbrio entre os prazeres e as dores da vida.", "correct": false },
+      { "answer": "Agir de forma moderada, evitando os extremos e buscando o equilíbrio entre vícios e virtudes.", "correct": true },
+      { "answer": "Seguir a lei da maioria, mesmo que ela não esteja de acordo com os seus princípios.", "correct": false },
+      { "answer": "Negar a si mesmo os prazeres da vida para alcançar a iluminação espiritual.", "correct": false }
     ]
   },
   {
-    "question": "6. Qual era o papel dos trovadores na sociedade medieval?",
+    "question": "7º Segundo Aristóteles, por que o homem é considerado um \"animal político\"?",
     "answers": [
-      { "answer": "Eram cavaleiros que lutavam em batalhas épicas.", "correct": false },
-      { "answer": "Eram clérigos responsáveis pela administração da Igreja.", "correct": false },
-      { "answer": "Eram poetas e músicos que compunham e cantavam cantigas sobre o amor, a guerra e outros temas.", "correct": true },
-      { "answer": "Eram camponeses que trabalhavam nas terras dos senhores feudais.", "correct": false },
-      { "answer": "Eram reis e rainhas que governavam os reinos medievais.", "correct": false }
+      { "answer": "Porque ele é o único animal que possui linguagem articulada.", "correct": false },
+      { "answer": "Porque ele é o único animal que pode andar ereto.", "correct": false },
+      { "answer": "Porque ele é o único animal que possui raciocínio lógico.", "correct": false },
+      { "answer": "Porque ele é feito para viver em sociedade e buscar o bem comum.", "correct": true },
+      { "answer": "Porque ele é o único animal que possui consciência de si mesmo.", "correct": false }
     ]
   },
   {
-    "question": "7. Qual dos autores a seguir é considerado um dos principais representantes do trovadorismo português?",
+    "question": "8º Qual das alternativas a seguir não é uma forma de governo analisada por Aristóteles?",
     "answers": [
-      { "answer": "Dom Dinis.", "correct": true },
-      { "answer": "Luís de Camões.", "correct": false },
-      { "answer": "Fernando Pessoa.", "correct": false },
-      { "answer": "José Saramago.", "correct": false },
-      { "answer": "Eça de Queirós.", "correct": false }
+      { "answer": "Monarquia", "correct": false },
+      { "answer": "Democracia", "correct": false },
+      { "answer": "Oligarquia", "correct": false },
+      { "answer": "Teocracia", "correct": true },
+      { "answer": "Tirania", "correct": false }
     ]
   },
   {
-    "question": "8. Qual das alternativas define melhor a prosa?",
+    "question": "9º Qual era a forma de governo ideal para Aristóteles? Por quê?",
     "answers": [
-      { "answer": "Linguagem concisa e densa, com foco na musicalidade e ritmo.", "correct": false },
-      { "answer": "Expressão direta e objetiva, utilizando frases curtas e linguagem coloquial.", "correct": true },
-      { "answer": "Estrutura rígida, com versos e rimas predefinidos.", "correct": false },
-      { "answer": "Linguagem simbólica e subjetiva, explorando emoções e sentimentos.", "correct": false },
-      { "answer": "Uso de recursos literários como metáforas e personificações.", "correct": false }
-    ]
-  },
-  {
-    "question": "9. Qual das alternativas NÃO é uma característica da poesia?",
-    "answers": [
-      { "answer": "Linguagem concisa e expressiva, com uso de figuras de linguagem.", "correct": false },
-      { "answer": "Estrutura livre ou com métrica e ritmo definidos.", "correct": false },
-      { "answer": "Foco na emoção e na subjetividade, explorando sentimentos e ideias.", "correct": false },
-      { "answer": "Narrativa linear e sequencial, com desenvolvimento de personagens e trama.", "correct": true },
-      { "answer": "Utilização de recursos sonoros como rima, ritmo e aliteração.", "correct": false }
-    ]
-  },
-  {
-    "question": "10. O que é autoria literária?",
-    "answers": [
-      { "answer": "A capacidade de ler e interpretar textos literários de forma crítica.", "correct": false },
-      { "answer": "A produção de textos literários originais, expressando a visão e a criatividade do autor.", "correct": true },
-      { "answer": "A análise e o estudo de obras literárias, contextualizando-as em seu período histórico.", "correct": false },
-      { "answer": "A tradução de obras literárias de um idioma para outro, preservando o sentido original.", "correct": false },
-      { "answer": "A organização e a catalogação de obras literárias em bibliotecas e museus.", "correct": false }
-    ]
-  },
-  {
-    "question": "11. Qual dos autores a seguir é considerado um dos principais representantes da prosa modernista brasileira?",
-    "answers": [
-      { "answer": "Machado de Assis.", "correct": false },
-      { "answer": "José de Alencar.", "correct": false },
-      { "answer": "Mário de Andrade.", "correct": true },
-      { "answer": "Olavo Bilac.", "correct": false },
-      { "answer": "Gonçalves Dias.", "correct": false }
+      { "answer": "A monarquia, pois um único líder forte garante a ordem e a justiça.", "correct": false },
+      { "answer": "A democracia, pois permite que todos os cidadãos participem das decisões políticas.", "correct": false },
+      { "answer": "A oligarquia, pois o governo de poucos garante a estabilidade e o progresso da sociedade.", "correct": false },
+      { "answer": "Uma forma mista, combinando elementos de monarquia, democracia e oligarquia, buscando o equilíbrio entre os diferentes grupos sociais.", "correct": true },
+      { "answer": "A anarquia, pois a ausência de governo permite que as pessoas sejam livres e vivam de acordo com seus próprios princípios.", "correct": false }
     ]
   }
-                  
+  
+  
+  
+  
+  
+  
+  
+                 
     
   
 ];

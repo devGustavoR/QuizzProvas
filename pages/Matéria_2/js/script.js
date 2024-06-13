@@ -10,107 +10,104 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
   {
-    "question": "1. Qual período da Pré-História se caracteriza pelo uso de ferramentas rudimentares de pedra lascada e pela caça e coleta como principais atividades de subsistência?",
+    "question": "1. Qual das alternativas a seguir apresenta o uso correto da apócope em um adjetivo espanhol?",
     "answers": [
-      { "answer": "Paleolítico Superior", "correct": false },
-      { "answer": "Paleolítico Inferior", "correct": true },
-      { "answer": "Mesolítico", "correct": false },
-      { "answer": "Neolítico", "correct": false },
-      { "answer": "Idade dos Metais", "correct": false }
+      { "answer": "La niña bueno se porta muy bien.", "correct": false },
+      { "answer": "El profesor malo nos dio una mala nota.", "correct": false },
+      { "answer": "Tengo un amigo grande que vive en Madrid.", "correct": false },
+      { "answer": "Me gusta la música antiguo.", "correct": false },
+      { "answer": "Compré un libro nuevo ayer.", "correct": true }
     ]
   },
   {
-    "question": "2. Qual das alternativas a seguir NÃO é uma característica da arte rupestre paleolítica?",
+    "question": "2. Em qual frase a apócope não deve ser utilizada?",
     "answers": [
-      { "answer": "Representação de animais selvagens, como bisões, mamutes e cavalos.", "correct": false },
-      { "answer": "Figuras humanas estilizadas e com poucos detalhes.", "correct": true },
-      { "answer": "Uso de cores vibrantes e técnicas complexas de pintura.", "correct": true },
-      { "answer": "Temas relacionados à caça, à guerra e à vida cotidiana.", "correct": false },
-      { "answer": "Localização em cavernas e abrigos rochosos.", "correct": false }
+      { "answer": "Hablé con un hombre alto y delgado.", "correct": false },
+      { "answer": "Mi hermana es muy amable y cariñosa.", "correct": false },
+      { "answer": "Compré una camisa azul claro.", "correct": true },
+      { "answer": "El niño pequeño estaba jugando en el parque.", "correct": false },
+      { "answer": "La película fue muy interesante.", "correct": false }
     ]
   },
   {
-    "question": "3. Qual foi a principal transformação social e econômica que ocorreu durante a Revolução Neolítica?",
+    "question": "3. Qual das alternativas completa corretamente a frase \"Voy __________ el parque con mis amigos\"?",
     "answers": [
-      { "answer": "Adoção da agricultura e da domesticação de animais.", "correct": true },
-      { "answer": "Desenvolvimento de ferramentas de metalurgia.", "correct": false },
-      { "answer": "Surgimento das primeiras cidades e civilizações.", "correct": false },
-      { "answer": "Expansão das sociedades nômades para novas regiões.", "correct": false },
-      { "answer": "Aperfeiçoamento das técnicas de caça e coleta.", "correct": false }
+      { "answer": "a", "correct": true },
+      { "answer": "en", "correct": false },
+      { "answer": "de", "correct": false },
+      { "answer": "para", "correct": false },
+      { "answer": "por", "correct": false }
     ]
   },
   {
-    "question": "4. Qual dos monumentos megalíticos a seguir é considerado um dos mais importantes da Pré-História na Europa?",
+    "question": "4. Escolha a preposição correta para completar a frase \"Salí de casa __________ ir al trabajo\":",
     "answers": [
-      { "answer": "Stonehenge (Inglaterra)", "correct": true },
-      { "answer": "Carnac (França)", "correct": false },
-      { "answer": "Göbekli Tepe (Turquia)", "correct": false },
-      { "answer": "Moai (Ilha de Páscoa)", "correct": false },
-      { "answer": "Machu Picchu (Peru)", "correct": false }
+      { "answer": "a", "correct": false },
+      { "answer": "en", "correct": false },
+      { "answer": "de", "correct": true },
+      { "answer": "para", "correct": false },
+      { "answer": "por", "correct": false }
     ]
   },
   {
-    "question": "5. Qual civilização da Antiguidade Oriental era conhecida por sua complexa organização social, avançados conhecimentos em matemática e astronomia, e pela construção de pirâmides e monumentos grandiosos?",
+    "question": "5. Escolha a alternativa que completa corretamente a frase \"Voy al cine con mis amigos\":",
     "answers": [
-      { "answer": "Mesopotâmia", "correct": false },
-      { "answer": "Egito Antigo", "correct": true },
-      { "answer": "Índia Antiga", "correct": false },
-      { "answer": "China Antiga", "correct": false },
-      { "answer": "Civilização Olmeca", "correct": false }
+      { "answer": "a la", "correct": true },
+      { "answer": "al la", "correct": false },
+      { "answer": "de la", "correct": false },
+      { "answer": "para el", "correct": false },
+      { "answer": "por las", "correct": false }
     ]
   },
   {
-    "question": "6. Qual das alternativas a seguir NÃO é uma característica marcante da religião politeísta presente em diversas civilizações da Antiguidade Oriental?",
+    "question": "6. Qual das alternativas apresenta a contração correta para a frase \"Voy a comer\"?",
     "answers": [
-      { "answer": "Adoração de vários deuses e deusas, cada um com seus próprios poderes e atributos.", "correct": false },
-      { "answer": "Crença em uma vida após a morte e na importância dos rituais funerários.", "correct": false },
-      { "answer": "Presença de uma classe sacerdotal responsável pela comunicação entre os deuses e os homens.", "correct": false },
-      { "answer": "Adoção de um único deus como divindade suprema, criadora do universo.", "correct": true },
-      { "answer": "Construção de templos e monumentos grandiosos em homenagem aos deuses.", "correct": false }
+      { "answer": "al", "correct": false },
+      { "answer": "de", "correct": false },
+      { "answer": "para", "correct": false },
+      { "answer": "por", "correct": false },
+      { "answer": "a", "correct": true }
     ]
   },
   {
-    "question": "7. Qual dos sistemas de escrita a seguir foi desenvolvido na Mesopotâmia e teve grande influência na criação de outros alfabetos ao redor do mundo?",
+    "question": "7. Qual alternativa completa corretamente a frase \"Este es mi libro\"?",
     "answers": [
-      { "answer": "Hieróglifos", "correct": false },
-      { "answer": "Cuneiforme", "correct": true },
-      { "answer": "Ideogramas", "correct": false },
-      { "answer": "Alfabeto fonético", "correct": false },
-      { "answer": "Escrita silábica", "correct": false }
+      { "answer": "mío", "correct": true },
+      { "answer": "mí", "correct": false },
+      { "answer": "conmigo", "correct": false },
+      { "answer": "me", "correct": false },
+      { "answer": "m", "correct": false }
     ]
   },
   {
-    "question": "8. Qual das alternativas a seguir NÃO é uma característica fundamental da Grécia Antiga?",
+    "question": "8. Escolha a opção que apresenta o pronome possessivo correto para a frase \"Las llaves son suyas\":",
     "answers": [
-      { "answer": "Adoção da democracia como sistema de governo, com participação dos cidadãos nas decisões políticas.", "correct": false },
-      { "answer": "Desenvolvimento de uma rica cultura, incluindo filosofia, teatro, literatura, escultura e arquitetura.", "correct": false },
-      { "answer": "Influência marcante do politeísmo, com crença em diversos deuses e deusas.", "correct": false },
-      { "answer": "Expansão territorial por meio da conquista militar, formando um império poderoso.", "correct": true },
-      { "answer": "Divisão da sociedade em classes sociais desiguais, com escravos na base da pirâmide social.", "correct": false }
+      { "answer": "su", "correct": false },
+      { "answer": "sus", "correct": true },
+      { "answer": "suyo", "correct": false },
+      { "answer": "suya", "correct": false },
+      { "answer": "sí", "correct": false }
     ]
   },
   {
-    "question": "9. Qual foi o principal conflito militar entre gregos e persas durante a Antiguidade Clássica?",
+    "question": "9. Complete a frase \"Esta es la casa _____\":",
     "answers": [
-      { "answer": "Guerra do Peloponeso", "correct": false },
-      { "answer": "Guerras Médicas", "correct": true },
-      { "answer": "Batalha de Termópilas", "correct": false },
-      { "answer": "Conquista de Esparta por Atenas", "correct": false },
-      { "answer": "Expedição de Alexandre, o Grande", "correct": false }
+      { "answer": "aquel", "correct": false },
+      { "answer": "aquella", "correct": true },
+      { "answer": "ese", "correct": false },
+      { "answer": "esa", "correct": false }
     ]
   },
   {
-    "question": "10. Qual era o objetivo principal das Olimpíadas na Grécia Antiga?",
+    "question": "10. Qual alternativa apresenta o pronome demonstrativo neutro correto para a frase \"Eso me gusta mucho\"?",
     "answers": [
-      { "answer": "Celebrar os deuses gregos e promover a fé religiosa.", "correct": false },
-      { "answer": "Unificar as diferentes cidades-estados gregas em torno de um evento esportivo.", "correct": true },
-      { "answer": "Estimular o desenvolvimento da cultura e da arte na Grécia Antiga.", "correct": false },
-      { "answer": "Treinar soldados para as guerras que eram travadas entre as cidades-estados.", "correct": false },
-      { "answer": "Promover o comércio e a interação entre os povos do Mediterrâneo.", "correct": false }
+      { "answer": "éste", "correct": false },
+      { "answer": "ésta", "correct": false },
+      { "answer": "ése", "correct": true },
+      { "answer": "ésa", "correct": true },
+      { "answer": "aquello", "correct": true }
     ]
   },
-        
-  
               
 ];
 
