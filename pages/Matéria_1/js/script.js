@@ -10,104 +10,126 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
   {
-    "question": "1º Qual o nome da ferramenta que, segundo Aristóteles, nos permite analisar argumentos e identificar falhas de raciocínio?",
+    "question": "1. Qual cientista propôs a teoria da deriva continental no início do século XX?",
     "answers": [
-      { "answer": "Silogismo", "correct": true },
-      { "answer": "Ética", "correct": false },
-      { "answer": "Política", "correct": false },
-      { "answer": "Categoria", "correct": false },
-      { "answer": "Órgão", "correct": false }
-    ]
-  },  
-  {
-    "question": "2º O silogismo, um raciocínio dedutivo criado por Aristóteles, é composto por quais elementos?",
-    "answers": [
-      { "answer": "Felicidade, virtude e vício.", "correct": false },
-      { "answer": "Premissa maior, premissa menor e conclusão.", "correct": true },
-      { "answer": "Cidadão, justiça e bem comum.", "correct": false },
-      { "answer": "Alma racional, alma vegetativa e alma sensível.", "correct": false },
-      { "answer": "Forma e matéria.", "correct": false }
+      { "answer": "Charles Darwin", "correct": false },
+      { "answer": "Alfred Wegener", "correct": true },
+      { "answer": "Stephen Hawking", "correct": false },
+      { "answer": "Albert Einstein", "correct": false },
+      { "answer": "Isaac Newton", "correct": false }
     ]
   },
   {
-    "question": "3º As categorias de Aristóteles são conceitos universais que representam diferentes tipos de seres. Qual das alternativas a seguir não é uma categoria?",
+    "question": "2. Que tipo de evidências sustentam a teoria da deriva continental?",
     "answers": [
-      { "answer": "Substância", "correct": false },
-      { "answer": "Qualidade", "correct": false },
-      { "answer": "Quantidade", "correct": false },
-      { "answer": "Relação", "correct": false },
-      { "answer": "Emoção", "correct": true }
+      { "answer": "Observação de fósseis de animais e plantas em continentes distantes com características semelhantes.", "correct": true },
+      { "answer": "Presença de cadeias montanhosas com formatos idênticos em diferentes continentes.", "correct": true },
+      { "answer": "Descoberta de rochas com a mesma idade geológica em continentes hoje separados por oceanos.", "correct": true },
+      { "answer": "Todas as alternativas acima.", "correct": true },
+      { "answer": "Nenhuma das alternativas acima.", "correct": false }
     ]
   },
   {
-    "question": "4º Para Aristóteles, qual é o objetivo final da vida humana?",
+    "question": "3. Qual foi o principal mecanismo proposto por Wegener para explicar o movimento dos continentes?",
     "answers": [
-      { "answer": "Alcançar a riqueza material.", "correct": false },
-      { "answer": "Buscar a fama e o reconhecimento.", "correct": false },
-      { "answer": "Viver uma vida de prazeres momentâneos.", "correct": false },
-      { "answer": "Conquistar o poder político.", "correct": false },
-      { "answer": "Alcançar a felicidade (eudaimonia) através da razão e da virtude.", "correct": true }
+      { "answer": "Convecção do manto terrestre.", "correct": false },
+      { "answer": "Expansão do assoalho oceânico.", "correct": false },
+      { "answer": "Movimentação das placas tectônicas.", "correct": false },
+      { "answer": "Ação das geleiras.", "correct": false },
+      { "answer": "Erosão e sedimentação.", "correct": false }
     ]
   },
   {
-    "question": "5º O que Aristóteles considera como o caminho para a felicidade?",
+    "question": "4. A teoria da deriva continental e a teoria das placas tectônicas, juntas, revolucionaram a compreensão da dinâmica da Terra. No entanto, ainda existem aspectos que não estão totalmente compreendidos. Cite um dos principais desafios científicos relacionados a essas teorias.",
     "answers": [
-      { "answer": "A busca incessante por bens materiais.", "correct": false },
-      { "answer": "A prática de atividades físicas e a alimentação balanceada.", "correct": false },
-      { "answer": "O desenvolvimento de inteligência e habilidades cognitivas.", "correct": false },
-      { "answer": "O cultivo de virtudes como justiça, coragem e temperança.", "correct": true },
-      { "answer": "A obediência às regras e normas sociais.", "correct": false }
+      { "answer": "Determinar a exata velocidade e direção do movimento das placas tectônicas em diferentes regiões do planeta.", "correct": true },
+      { "answer": "Compreender os mecanismos que controlam a subducção das placas tectônicas e o destino do material rochoso subduzido.", "correct": true },
+      { "answer": "Prever com precisão a ocorrência de terremotos, vulcões e outros desastres naturais relacionados à movimentação das placas tectônicas.", "correct": true },
+      { "answer": "Desvendar a origem do campo magnético terrestre e sua relação com a movimentação do manto terrestre.", "correct": false },
+      { "answer": "Reconstruir em detalhes a história das placas tectônicas e dos continentes ao longo de bilhões de anos.", "correct": true }
     ]
   },
   {
-    "question": "6º O \"justo meio\" é um conceito central na ética aristotélica. O que ele significa?",
+    "question": "5.A teoria da deriva continental, ao propor a fragmentação e o movimento de grandes massas continentais, gerou questionamentos sobre a rigidez do planeta. Como a teoria das placas tectônicas, que se baseia na deriva continental, resolve essa questão?",
     "answers": [
-      { "answer": "Buscar sempre o meio termo em todas as situações.", "correct": false },
-      { "answer": "Encontrar um equilíbrio entre os prazeres e as dores da vida.", "correct": false },
-      { "answer": "Agir de forma moderada, evitando os extremos e buscando o equilíbrio entre vícios e virtudes.", "correct": true },
-      { "answer": "Seguir a lei da maioria, mesmo que ela não esteja de acordo com os seus princípios.", "correct": false },
-      { "answer": "Negar a si mesmo os prazeres da vida para alcançar a iluminação espiritual.", "correct": false }
+      { "answer": "Ao propor que os continentes \"flutuam\" sobre um manto terrestre plástico e em movimento, a teoria das placas tectônicas explica a rigidez da litosfera (crosta + parte superior do manto) e a flexibilidade do manto inferior.", "correct": true },
+      { "answer": "Ao propor que os continentes se movimentam em decorrência da convecção do manto terrestre, a teoria das placas tectônicas explica a deformação gradual das rochas e a formação de novas rochas no processo.", "correct": false },
+      { "answer": "Ao propor que os continentes se afastam uns dos outros devido à expansão do assoalho oceânico, a teoria das placas tectônicas explica a formação de cadeias montanhosas e fossas oceânicas.", "correct": false },
+      { "answer": "Ao propor que os continentes se chocam uns contra os outros, a teoria das placas tectônicas explica a formação de terremotos e vulcões em áreas de convergência das placas.", "correct": false },
+      { "answer": "Ao propor a existência de diferentes tipos de limites entre as placas tectônicas (convergentes, divergentes e transformantes), a teoria das placas tectônicas explica a variedade de processos geológicos que ocorrem na superfície terrestre.", "correct": false }
     ]
   },
   {
-    "question": "7º Segundo Aristóteles, por que o homem é considerado um \"animal político\"?",
+    "question": "6. A zona de Benioff é uma região específica da crosta terrestre onde ocorre um processo crucial para a dinâmica das placas tectônicas. Qual é esse processo?",
     "answers": [
-      { "answer": "Porque ele é o único animal que possui linguagem articulada.", "correct": false },
-      { "answer": "Porque ele é o único animal que pode andar ereto.", "correct": false },
-      { "answer": "Porque ele é o único animal que possui raciocínio lógico.", "correct": false },
-      { "answer": "Porque ele é feito para viver em sociedade e buscar o bem comum.", "correct": true },
-      { "answer": "Porque ele é o único animal que possui consciência de si mesmo.", "correct": false }
+      { "answer": "Formação de cadeias montanhosas por convergência continental.", "correct": false },
+      { "answer": "Criação de novos oceanos por divergência das placas tectônicas.", "correct": false },
+      { "answer": "Movimentação lateral das placas ao longo de falhas transformantes.", "correct": false },
+      { "answer": "Subducção de uma placa tectônica sob a outra, com formação de fossas oceânicas e vulcanismo.", "correct": true },
+      { "answer": "Afastamento das placas tectônicas e formação de dorsais oceânicas.", "correct": false }
     ]
   },
   {
-    "question": "8º Qual das alternativas a seguir não é uma forma de governo analisada por Aristóteles?",
+    "question": "7. Qual das alternativas a seguir NÃO é um tipo de limite entre placas tectônicas?",
     "answers": [
-      { "answer": "Monarquia", "correct": false },
-      { "answer": "Democracia", "correct": false },
-      { "answer": "Oligarquia", "correct": false },
-      { "answer": "Teocracia", "correct": true },
-      { "answer": "Tirania", "correct": false }
+      { "answer": "Convergente", "correct": false },
+      { "answer": "Divergente", "correct": false },
+      { "answer": "Transformante", "correct": false },
+      { "answer": "Subducção", "correct": true },
+      { "answer": "Convergência continental", "correct": true }
     ]
   },
   {
-    "question": "9º Qual era a forma de governo ideal para Aristóteles? Por quê?",
+    "question": "8. Que processo geológico ocorre em uma zona de convergência continental, onde duas placas tectônicas se chocam e se comprimem?",
     "answers": [
-      { "answer": "A monarquia, pois um único líder forte garante a ordem e a justiça.", "correct": false },
-      { "answer": "A democracia, pois permite que todos os cidadãos participem das decisões políticas.", "correct": false },
-      { "answer": "A oligarquia, pois o governo de poucos garante a estabilidade e o progresso da sociedade.", "correct": false },
-      { "answer": "Uma forma mista, combinando elementos de monarquia, democracia e oligarquia, buscando o equilíbrio entre os diferentes grupos sociais.", "correct": true },
-      { "answer": "A anarquia, pois a ausência de governo permite que as pessoas sejam livres e vivam de acordo com seus próprios princípios.", "correct": false }
+      { "answer": "Formação de cadeias montanhosas e orogênese.", "correct": true },
+      { "answer": "Criação de novos oceanos e expansão do assoalho oceânico.", "correct": false },
+      { "answer": "Movimentação lateral das placas ao longo de falhas transformantes.", "correct": false },
+      { "answer": "Afastamento das placas e formação de dorsais oceânicas.", "correct": false },
+      { "answer": "Subducção de uma placa sob a outra, com formação de fossas oceânicas e vulcanismo.", "correct": false }
     ]
-  }
-  
-  
-  
-  
-  
-  
-  
-                 
-    
+  },
+  {
+    "question": "9.Qual é a principal força motriz por trás do movimento das placas tectônicas?",
+    "answers": [
+      { "answer": "Ação das marés oceânicas sobre as placas.", "correct": false },
+      { "answer": "Forças gravitacionais que atraem as placas para o centro da Terra.", "correct": false },
+      { "answer": "Correntes de ar que sopram sobre a superfície terrestre.", "correct": false },
+      { "answer": "Convecção do manto terrestre, gerada pelo calor interno do planeta.", "correct": true },
+      { "answer": "Atrito entre as placas tectônicas e a superfície terrestre.", "correct": false }
+    ]
+  },
+  {
+    "question": "10. Imagine que você está explorando uma caverna e encontra uma rocha com textura vítrea e bolhas de ar em seu interior. Qual o tipo de rocha mais provável que você encontrou?",
+    "answers": [
+      { "answer": "Ígnea intrusiva", "correct": false },
+      { "answer": "Ígnea extrusiva", "correct": true },
+      { "answer": "Metamórfica", "correct": false },
+      { "answer": "Sedimentar clástica", "correct": false },
+      { "answer": "Sedimentar química", "correct": false }
+    ]
+  },
+  {
+    "question": "11. Durante uma aula de campo, você observa uma rocha composta por diferentes camadas de sedimentos, com restos de conchas e outros organismos marinhos. Que tipo de rocha é essa?",
+    "answers": [
+      { "answer": "Ígnea intrusiva", "correct": false },
+      { "answer": "Ígnea extrusiva", "correct": false },
+      { "answer": "Metamórfica", "correct": false },
+      { "answer": "Sedimentar clástica", "correct": true },
+      { "answer": "Sedimentar química", "correct": false }
+    ]
+  },
+  {
+    "question": "12.Qual processo geológico transforma rochas preexistentes em rochas metamórficas?",
+    "answers": [
+      { "answer": "Fusão e solidificação do magma", "correct": false },
+      { "answer": "Resfriamento e solidificação do magma", "correct": false },
+      { "answer": "Compactação e cimentação de sedimentos", "correct": false },
+      { "answer": "Precipitação de minerais em soluções aquosas", "correct": false },
+      { "answer": "Ação de calor e pressão no interior da Terra", "correct": true }
+    ]
+  },
+   
   
 ];
 
