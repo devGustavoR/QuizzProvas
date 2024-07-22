@@ -3,132 +3,109 @@ const question = document.querySelector('#question');
 const answerBox = document.querySelector('#answers-box');
 const quizzContainer = document.querySelector('#quizz-container');
 const scoreContainer = document.querySelector('#score-container');
-const letters = ['a', 'b', 'c', 'd', 'e'];
+const letters = ['a', 'b', 'c', 'd'];
 let points = 0;
 let actualQuestion = 0;
 
 // perguntas
 const questions = [
   {
-    "question": "1. Qual cientista propôs a teoria da deriva continental no início do século XX?",
+    "question": "1. Qual foi a principal causa das Cruzadas?",
     "answers": [
-      { "answer": "Charles Darwin", "correct": false },
-      { "answer": "Alfred Wegener", "correct": true },
-      { "answer": "Stephen Hawking", "correct": false },
-      { "answer": "Albert Einstein", "correct": false },
-      { "answer": "Isaac Newton", "correct": false }
+      { "answer": "A necessidade de abrir novas rotas comerciais para o Oriente.", "correct": false },
+      { "answer": "A busca pela reunificação do Império Romano.", "correct": false },
+      { "answer": "A reconquista de Jerusalém e de outros locais sagrados pelos cristãos.", "correct": true },
+      { "answer": "A expansão do território do Sacro Império Romano-Germânico.", "correct": false }
     ]
   },
   {
-    "question": "2. Que tipo de evidências sustentam a teoria da deriva continental?",
+    "question": "2. O que foi a Peste Negra e qual foi seu impacto na população europeia?",
     "answers": [
-      { "answer": "Observação de fósseis de animais e plantas em continentes distantes com características semelhantes.", "correct": true },
-      { "answer": "Presença de cadeias montanhosas com formatos idênticos em diferentes continentes.", "correct": true },
-      { "answer": "Descoberta de rochas com a mesma idade geológica em continentes hoje separados por oceanos.", "correct": true },
-      { "answer": "Todas as alternativas acima.", "correct": true },
-      { "answer": "Nenhuma das alternativas acima.", "correct": false }
+      { "answer": "Uma revolta camponesa que causou a morte de milhares de nobres.", "correct": false },
+      { "answer": "Uma epidemia de varíola que exterminou 50% da população europeia.", "correct": false },
+      { "answer": "Uma praga bubônica que dizimou cerca de um terço da população europeia.", "correct": true },
+      { "answer": "Uma guerra civil que levou à fome e à morte de um quarto da população.", "correct": false }
     ]
   },
   {
-    "question": "3. Qual foi o principal mecanismo proposto por Wegener para explicar o movimento dos continentes?",
+    "question": "3. Qual foi a importância do Tratado de Verdun de 843?",
     "answers": [
-      { "answer": "Convecção do manto terrestre.", "correct": false },
-      { "answer": "Expansão do assoalho oceânico.", "correct": false },
-      { "answer": "Movimentação das placas tectônicas.", "correct": false },
-      { "answer": "Ação das geleiras.", "correct": false },
-      { "answer": "Erosão e sedimentação.", "correct": false }
+      { "answer": "A criação do Império Bizantino.", "correct": false },
+      { "answer": "A divisão do Império Carolíngio entre os três netos de Carlos Magno.", "correct": true },
+      { "answer": "A unificação da Península Ibérica sob domínio muçulmano.", "correct": false },
+      { "answer": "A aliança entre a França e a Inglaterra contra os vikings.", "correct": false }
     ]
   },
   {
-    "question": "4. A teoria da deriva continental e a teoria das placas tectônicas, juntas, revolucionaram a compreensão da dinâmica da Terra. No entanto, ainda existem aspectos que não estão totalmente compreendidos. Cite um dos principais desafios científicos relacionados a essas teorias.",
+    "question": "4. Qual foi a função das guildas na Idade Média?",
     "answers": [
-      { "answer": "Determinar a exata velocidade e direção do movimento das placas tectônicas em diferentes regiões do planeta.", "correct": true },
-      { "answer": "Compreender os mecanismos que controlam a subducção das placas tectônicas e o destino do material rochoso subduzido.", "correct": true },
-      { "answer": "Prever com precisão a ocorrência de terremotos, vulcões e outros desastres naturais relacionados à movimentação das placas tectônicas.", "correct": true },
-      { "answer": "Desvendar a origem do campo magnético terrestre e sua relação com a movimentação do manto terrestre.", "correct": false },
-      { "answer": "Reconstruir em detalhes a história das placas tectônicas e dos continentes ao longo de bilhões de anos.", "correct": true }
+      { "answer": "Garantir a paz entre os feudos rivais.", "correct": false },
+      { "answer": "Regular a produção e comércio de mercadorias e proteger os interesses dos artesãos.", "correct": true },
+      { "answer": "Organizar cruzadas e defender a fé cristã.", "correct": false },
+      { "answer": "Manter a ordem e a segurança nas cidades medievais.", "correct": false }
     ]
   },
   {
-    "question": "5.A teoria da deriva continental, ao propor a fragmentação e o movimento de grandes massas continentais, gerou questionamentos sobre a rigidez do planeta. Como a teoria das placas tectônicas, que se baseia na deriva continental, resolve essa questão?",
+    "question": "5. Quem foi Joana d'Arc e qual foi seu papel na Guerra dos Cem Anos?",
     "answers": [
-      { "answer": "Ao propor que os continentes \"flutuam\" sobre um manto terrestre plástico e em movimento, a teoria das placas tectônicas explica a rigidez da litosfera (crosta + parte superior do manto) e a flexibilidade do manto inferior.", "correct": true },
-      { "answer": "Ao propor que os continentes se movimentam em decorrência da convecção do manto terrestre, a teoria das placas tectônicas explica a deformação gradual das rochas e a formação de novas rochas no processo.", "correct": false },
-      { "answer": "Ao propor que os continentes se afastam uns dos outros devido à expansão do assoalho oceânico, a teoria das placas tectônicas explica a formação de cadeias montanhosas e fossas oceânicas.", "correct": false },
-      { "answer": "Ao propor que os continentes se chocam uns contra os outros, a teoria das placas tectônicas explica a formação de terremotos e vulcões em áreas de convergência das placas.", "correct": false },
-      { "answer": "Ao propor a existência de diferentes tipos de limites entre as placas tectônicas (convergentes, divergentes e transformantes), a teoria das placas tectônicas explica a variedade de processos geológicos que ocorrem na superfície terrestre.", "correct": false }
+      { "answer": "Uma nobre francesa que se aliou aos ingleses para conquistar a França.", "correct": false },
+      { "answer": "Uma camponesa que liderou o exército francês e ajudou a reverter a situação na Guerra dos Cem Anos.", "correct": true },
+      { "answer": "Uma rainha inglesa que promoveu a paz entre Inglaterra e França.", "correct": false },
+      { "answer": "Uma mercenária que lutou por ambos os lados durante a guerra.", "correct": false }
     ]
   },
   {
-    "question": "6. A zona de Benioff é uma região específica da crosta terrestre onde ocorre um processo crucial para a dinâmica das placas tectônicas. Qual é esse processo?",
+    "question": "6. Qual foi o principal objetivo da Reconquista na Península Ibérica?",
     "answers": [
-      { "answer": "Formação de cadeias montanhosas por convergência continental.", "correct": false },
-      { "answer": "Criação de novos oceanos por divergência das placas tectônicas.", "correct": false },
-      { "answer": "Movimentação lateral das placas ao longo de falhas transformantes.", "correct": false },
-      { "answer": "Subducção de uma placa tectônica sob a outra, com formação de fossas oceânicas e vulcanismo.", "correct": true },
-      { "answer": "Afastamento das placas tectônicas e formação de dorsais oceânicas.", "correct": false }
+      { "answer": "Expulsar os vikings do norte da Europa.", "correct": false },
+      { "answer": "Unir a Espanha e Portugal em um único reino.", "correct": false },
+      { "answer": "Recuperar os territórios ibéricos ocupados pelos muçulmanos.", "correct": true },
+      { "answer": "Converter os povos escandinavos ao cristianismo.", "correct": false }
     ]
   },
   {
-    "question": "7. Qual das alternativas a seguir NÃO é um tipo de limite entre placas tectônicas?",
+    "question": "7. Qual era a base da economia feudal na Europa Medieval?",
     "answers": [
-      { "answer": "Convergente", "correct": false },
-      { "answer": "Divergente", "correct": false },
-      { "answer": "Transformante", "correct": false },
-      { "answer": "Subducção", "correct": true },
-      { "answer": "Convergência continental", "correct": true }
+      { "answer": "Comércio marítimo e exploração de especiarias.", "correct": false },
+      { "answer": "Agricultura de subsistência e produção artesanal.", "correct": true },
+      { "answer": "Mineração de ouro e prata nas colônias.", "correct": false },
+      { "answer": "Indústria têxtil e exportação de produtos manufaturados.", "correct": false }
     ]
   },
   {
-    "question": "8. Que processo geológico ocorre em uma zona de convergência continental, onde duas placas tectônicas se chocam e se comprimem?",
+    "question": "8. O que representava o sistema de vassalagem na sociedade feudal?",
     "answers": [
-      { "answer": "Formação de cadeias montanhosas e orogênese.", "correct": true },
-      { "answer": "Criação de novos oceanos e expansão do assoalho oceânico.", "correct": false },
-      { "answer": "Movimentação lateral das placas ao longo de falhas transformantes.", "correct": false },
-      { "answer": "Afastamento das placas e formação de dorsais oceânicas.", "correct": false },
-      { "answer": "Subducção de uma placa sob a outra, com formação de fossas oceânicas e vulcanismo.", "correct": false }
+      { "answer": "A relação entre o rei e seus conselheiros.", "correct": false },
+      { "answer": "A ligação entre os senhores feudais e seus servos, baseada em obrigações mútuas de proteção e serviço.", "correct": true },
+      { "answer": "A aliança entre diferentes reinos para a defesa contra invasões bárbaras.", "correct": false },
+      { "answer": "O acordo entre o clero e a nobreza para dividir o poder político.", "correct": false }
     ]
   },
   {
-    "question": "9.Qual é a principal força motriz por trás do movimento das placas tectônicas?",
+    "question": "9. Qual foi a principal contribuição do Império Carolíngio para a Europa Medieval?",
     "answers": [
-      { "answer": "Ação das marés oceânicas sobre as placas.", "correct": false },
-      { "answer": "Forças gravitacionais que atraem as placas para o centro da Terra.", "correct": false },
-      { "answer": "Correntes de ar que sopram sobre a superfície terrestre.", "correct": false },
-      { "answer": "Convecção do manto terrestre, gerada pelo calor interno do planeta.", "correct": true },
-      { "answer": "Atrito entre as placas tectônicas e a superfície terrestre.", "correct": false }
+      { "answer": "A construção de catedrais góticas.", "correct": false },
+      { "answer": "A unificação temporária de grande parte da Europa Ocidental e a promoção da educação e cultura através do Renascimento Carolíngio.", "correct": true },
+      { "answer": "A criação de um sistema bancário eficiente.", "correct": false },
+      { "answer": "A invenção da imprensa.", "correct": false }
     ]
   },
   {
-    "question": "10. Imagine que você está explorando uma caverna e encontra uma rocha com textura vítrea e bolhas de ar em seu interior. Qual o tipo de rocha mais provável que você encontrou?",
+    "question": "10. Qual foi o impacto da Magna Carta de 1215 na Inglaterra medieval?",
     "answers": [
-      { "answer": "Ígnea intrusiva", "correct": false },
-      { "answer": "Ígnea extrusiva", "correct": true },
-      { "answer": "Metamórfica", "correct": false },
-      { "answer": "Sedimentar clástica", "correct": false },
-      { "answer": "Sedimentar química", "correct": false }
+      { "answer": "A concessão de terras aos camponeses.", "correct": false },
+      { "answer": "A limitação do poder do rei e a garantia de certos direitos aos nobres e, posteriormente, ao povo.", "correct": true },
+      { "answer": "A unificação dos reinos ingleses e escoceses.", "correct": false },
+      { "answer": "A separação da Igreja e do Estado.", "correct": false }
     ]
-  },
-  {
-    "question": "11. Durante uma aula de campo, você observa uma rocha composta por diferentes camadas de sedimentos, com restos de conchas e outros organismos marinhos. Que tipo de rocha é essa?",
-    "answers": [
-      { "answer": "Ígnea intrusiva", "correct": false },
-      { "answer": "Ígnea extrusiva", "correct": false },
-      { "answer": "Metamórfica", "correct": false },
-      { "answer": "Sedimentar clástica", "correct": true },
-      { "answer": "Sedimentar química", "correct": false }
-    ]
-  },
-  {
-    "question": "12.Qual processo geológico transforma rochas preexistentes em rochas metamórficas?",
-    "answers": [
-      { "answer": "Fusão e solidificação do magma", "correct": false },
-      { "answer": "Resfriamento e solidificação do magma", "correct": false },
-      { "answer": "Compactação e cimentação de sedimentos", "correct": false },
-      { "answer": "Precipitação de minerais em soluções aquosas", "correct": false },
-      { "answer": "Ação de calor e pressão no interior da Terra", "correct": true }
-    ]
-  },
+  }
+  
+  
+  
+  
+    
+    
+  
    
   
 ];
