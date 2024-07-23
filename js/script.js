@@ -30,7 +30,7 @@ document.querySelector('#loginForm').addEventListener('submit', (event) => {
     .then((userCredential) => {
       const user = userCredential.user;
       console.log("User signed in:", user);
-      window.location.href = '../game.html'
+      window.location.href = '/game.html'
     })
     .catch((error) => {
       const errorCode = error.code;
