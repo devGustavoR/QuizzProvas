@@ -1,9 +1,11 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
+
+// Obter os elementos de entrada de email e senha
 const emailInput = document.querySelector('#email');
 const passwordInput = document.querySelector('#password');
 
-// Your web app's Firebase configuration
+// Configuração do Firebase para o seu aplicativo web
 const firebaseConfig = {
   apiKey: "AIzaSyCf9BGs5C-ANSrDdLDGcXxFntlr6kjpngM",
   authDomain: "provas-e52a0.firebaseapp.com",
@@ -13,7 +15,7 @@ const firebaseConfig = {
   appId: "1:838457875800:web:4bdd4e05ff023daab8192d"
 };
 
-// Initialize Firebase
+// Inicializar Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
@@ -21,7 +23,7 @@ const auth = getAuth(app);
 document.querySelector('#loginForm').addEventListener('submit', (event) => {
   event.preventDefault();  // Prevenir o envio padrão do formulário
 
-   // Extrair os valores dos campos de entrada
+  // Extrair os valores dos campos de entrada
   const email = emailInput.value;
   const password = passwordInput.value;
 
@@ -29,12 +31,12 @@ document.querySelector('#loginForm').addEventListener('submit', (event) => {
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       const user = userCredential.user;
-      console.log("User signed in:", user);
-      window.location.href = 'QuizzProvas/game.html'
+      console.log("Usuário logado:", user);
+      window.location.href = 'game.html';  // Redirecionar para game.html após login bem-sucedido
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.log("Error:", errorCode, errorMessage);
+      console.log("Erro:", errorCode, errorMessage);
     });
 });
