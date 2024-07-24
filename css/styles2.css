@@ -33,6 +33,10 @@ a{
   margin-left: 1rem;
 }
 
+.tituloGame{
+  color: #fff;
+}
+
 .center-2{
   display:flex;
   justify-content: center;
@@ -42,12 +46,19 @@ a{
 }
 
 .inicio{
-  background-color: #fff;
-  color: #000;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
   font-size: 1.25rem;
-  padding: .9375rem;
+  padding: .8125rem;
   border-radius: .625rem;
   margin-top:1rem;
+}
+
+.img{
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
 }
 
 @media screen and  (max-width: 500px) {
