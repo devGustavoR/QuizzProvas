@@ -10,95 +10,95 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
   {
-    "question": "1. Qual é a principal diferença entre montanhas e planaltos?",
+    "question": "1. O que é coesão social?",
     "answers": [
-      { "answer": "As montanhas são formadas por erosão, enquanto os planaltos são formados por deposição de sedimentos.", "correct": false },
-      { "answer": "As montanhas são elevações naturais com altitudes superiores a 600 metros, enquanto os planaltos são áreas elevadas e relativamente planas com altitudes variáveis.", "correct": true },
-      { "answer": "As montanhas são encontradas apenas nos continentes, enquanto os planaltos existem tanto em continentes quanto no fundo dos oceanos.", "correct": false },
-      { "answer": "As montanhas são formadas por atividade vulcânica, enquanto os planaltos são formados por terremotos.", "correct": false }
+      { "answer": "A capacidade de uma sociedade de ter regras rígidas e normas fixas.", "correct": false },
+      { "answer": "A integração e a solidariedade entre os indivíduos de uma sociedade, resultando em harmonia e cooperação.", "correct": true },
+      { "answer": "A competição entre grupos sociais para a obtenção de recursos.", "correct": false },
+      { "answer": "A separação de uma sociedade em diferentes classes sociais e suas interações conflitantes.", "correct": false }
     ]
   },
   {
-    "question": "2. Qual é a definição de planície?",
+    "question": "2. Qual conceito Durkheim usou para descrever a forma de solidariedade típica das sociedades modernas?",
     "answers": [
-      { "answer": "Uma área extensa e elevada com encostas suaves.", "correct": false },
-      { "answer": "Uma área plana ou suavemente ondulada com baixa altitude e geralmente formada por deposição de sedimentos.", "correct": true },
-      { "answer": "Uma área de relevo acidentado com picos e vales profundos.", "correct": false },
-      { "answer": "Uma área de relevo plano localizada no topo de montanhas.", "correct": false }
+      { "answer": "Solidariedade mecânica", "correct": false },
+      { "answer": "Solidariedade orgânica", "correct": true },
+      { "answer": "Solidariedade primária", "correct": false },
+      { "answer": "Solidariedade secundária", "correct": false }
     ]
   },
   {
-    "question": "3. Como são formadas as cadeias montanhosas?",
+    "question": "3. O que caracteriza a solidariedade mecânica, segundo Durkheim?",
     "answers": [
-      { "answer": "Pela erosão contínua de planícies ao longo de milhões de anos.", "correct": false },
-      { "answer": "Pelo acúmulo de sedimentos trazidos por rios e ventos.", "correct": false },
-      { "answer": "Pela colisão e movimentação das placas tectônicas que causam o levantamento da crosta terrestre.", "correct": true },
-      { "answer": "Pelo derretimento de geleiras que esculpem o relevo ao seu redor.", "correct": false }
+      { "answer": "A interdependência e a especialização entre diferentes partes da sociedade.", "correct": false },
+      { "answer": "A coesão social baseada na semelhança entre os indivíduos e na conformidade com normas tradicionais.", "correct": true },
+      { "answer": "A divisão do trabalho e a interdependência complexa entre diferentes setores econômicos.", "correct": false },
+      { "answer": "A integração social através de normas e leis formais estabelecidas pelo Estado.", "correct": false }
     ]
   },
   {
-    "question": "4. Qual é a característica principal das depressões relativas?",
+    "question": "4. Qual é a principal função das instituições sociais, de acordo com Durkheim?",
     "answers": [
-      { "answer": "São áreas onde o relevo é mais elevado do que as áreas circundantes.", "correct": false },
-      { "answer": "São áreas onde o relevo é plano e localizado ao nível do mar.", "correct": false },
-      { "answer": "São áreas mais baixas que as regiões ao redor, mas não necessariamente abaixo do nível do mar.", "correct": true },
-      { "answer": "São áreas com intensa atividade vulcânica e frequentes terremotos.", "correct": false }
+      { "answer": "Garantir que todos os membros da sociedade tenham acesso a riquezas e propriedades.", "correct": false },
+      { "answer": "Regular o comportamento dos indivíduos e promover a integração e a coesão social.", "correct": true },
+      { "answer": "Criar normas e leis para controlar a vida privada dos cidadãos.", "correct": false },
+      { "answer": "Facilitar o desenvolvimento econômico e tecnológico de uma sociedade.", "correct": false }
     ]
   },
   {
-    "question": "5. O que são dobramentos modernos e onde são comumente encontrados?",
+    "question": "5. Em seu estudo sobre o suicídio, qual tipo de suicídio Durkheim identificou como resultado de uma integração social excessiva?",
     "answers": [
-      { "answer": "Formações rochosas antigas que se encontram em áreas de planícies.", "correct": false },
-      { "answer": "Formações geológicas resultantes da atividade vulcânica recente.", "correct": false },
-      { "answer": "Cadeias montanhosas jovens formadas pelo movimento recente das placas tectônicas, encontradas em regiões como os Andes e o Himalaia.", "correct": true },
-      { "answer": "Grandes bacias sedimentares formadas pela deposição de sedimentos ao longo de milhões de anos.", "correct": false }
+      { "answer": "Suicídio egoísta", "correct": true },
+      { "answer": "Suicídio altruísta", "correct": false },
+      { "answer": "Suicídio anômico", "correct": false },
+      { "answer": "Suicídio fatalista", "correct": false }
     ]
   },
   {
-    "question": "6. Qual é a principal diferença entre solo argiloso e solo arenoso?",
+    "question": "6. Como Durkheim definiu o conceito de 'anomia'?",
     "answers": [
-      { "answer": "O solo argiloso é mais permeável à água do que o solo arenoso.", "correct": false },
-      { "answer": "O solo argiloso tem partículas maiores e menos capacidade de reter água do que o solo arenoso.", "correct": false },
-      { "answer": "O solo argiloso tem partículas menores e maior capacidade de reter água do que o solo arenoso.", "correct": true },
-      { "answer": "O solo argiloso é composto principalmente de matéria orgânica, enquanto o solo arenoso é composto de minerais.", "correct": false }
+      { "answer": "A ausência de normas e regras sociais que leva a uma sensação de desorientação e falta de propósito.", "correct": true },
+      { "answer": "A conformidade estrita com normas sociais estabelecidas e a resistência a mudanças.", "correct": false },
+      { "answer": "A formação de novas normas sociais para substituir as antigas.", "correct": false },
+      { "answer": "O aumento da burocracia e da regulamentação na vida social.", "correct": false }
     ]
   },
   {
-    "question": "7. O que é a camada de húmus no solo e qual é sua importância?",
+    "question": "7. Qual foi a contribuição principal de Durkheim para a sociologia como disciplina?",
     "answers": [
-      { "answer": "Uma camada de rocha abaixo do solo que fornece nutrientes às plantas.", "correct": false },
-      { "answer": "Uma camada de água no solo que mantém a umidade para o crescimento das plantas.", "correct": false },
-      { "answer": "Uma camada superficial rica em matéria orgânica decomposta, fundamental para a fertilidade do solo.", "correct": true },
-      { "answer": "Uma camada de areia que ajuda na drenagem da água no solo.", "correct": false }
+      { "answer": "A introdução do conceito de darwinismo social e a aplicação da teoria da evolução à sociedade.", "correct": false },
+      { "answer": "A análise das estruturas sociais e a aplicação do método científico para estudar fenômenos sociais, promovendo a sociologia como uma ciência objetiva.", "correct": true },
+      { "answer": "O desenvolvimento de teorias psicológicas para explicar comportamentos individuais.", "correct": false },
+      { "answer": "A criação de modelos econômicos para entender a dinâmica do mercado e suas relações com a sociedade.", "correct": false }
     ]
   },
   {
-    "question": "8. Qual dos seguintes processos contribui para a formação do solo?",
+    "question": "8. Qual é o papel da religião na coesão social, segundo Durkheim?",
     "answers": [
-      { "answer": "O desmatamento e a queimada.", "correct": false },
-      { "answer": "A erosão pelo vento e pela água.", "correct": true },
-      { "answer": "A decomposição de materiais orgânicos e a meteorização de rochas.", "correct": true },
-      { "answer": "A construção de infraestruturas urbanas.", "correct": false }
+      { "answer": "A religião serve principalmente para criar divisões entre diferentes grupos sociais.", "correct": false },
+      { "answer": "A religião promove a integração social ao reforçar normas e valores compartilhados, criando um sentimento de pertencimento e identidade comum.", "correct": true },
+      { "answer": "A religião é vista como um obstáculo para a coesão social e a modernização.", "correct": false },
+      { "answer": "A religião tem um impacto mínimo na coesão social, sendo irrelevante para a organização da sociedade.", "correct": false }
     ]
   },
   {
-    "question": "9. O que é a capacidade de troca catiônica (CTC) do solo?",
+    "question": "9. Como Durkheim explica a função da divisão do trabalho em uma sociedade moderna?",
     "answers": [
-      { "answer": "A capacidade do solo de absorver e reter água.", "correct": false },
-      { "answer": "A capacidade do solo de reter e liberar nutrientes essenciais através de íons.", "correct": true },
-      { "answer": "A capacidade do solo de manter sua estrutura física.", "correct": false },
-      { "answer": "A capacidade do solo de resistir à erosão.", "correct": false }
+      { "answer": "A divisão do trabalho é vista como uma fonte de conflito e desigualdade social, que precisa ser eliminada.", "correct": false },
+      { "answer": "A divisão do trabalho aumenta a especialização e a interdependência entre os indivíduos, contribuindo para a coesão social e a integração na sociedade.", "correct": true },
+      { "answer": "A divisão do trabalho é responsável pelo enfraquecimento dos laços sociais e pela desintegração da coesão social.", "correct": false },
+      { "answer": "A divisão do trabalho é uma prática exclusiva das sociedades primitivas e não tem relevância nas sociedades modernas.", "correct": false}
     ]
   },
-  {
-    "question": "10. Qual é a característica principal do solo laterítico encontrado em regiões tropicais?",
-    "answers": [
-      { "answer": "Alta fertilidade devido à abundância de nutrientes.", "correct": false },
-      { "answer": "Baixa fertilidade devido à intensa lixiviação de nutrientes.", "correct": true },
-      { "answer": "Alta capacidade de retenção de água devido ao alto teor de argila.", "correct": false },
-      { "answer": "Grande quantidade de matéria orgânica acumulada na superfície.", "correct": false }
-    ]
-  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
               
 ];
